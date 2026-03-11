@@ -89,11 +89,11 @@ medical_terms_db = {
 }
 
 medicine_db = {
-    "mif": "A medication sometimes prescribed in reproductive health contexts or vitamin supplementation (Myo-inositol / D-Chiro Inositol).",
-    "metformin": "A medication often used to treat type 2 diabetes and insulin resistance in PCOS.",
-    "letrozole": "A medication used to induce ovulation.",
-    "clomid": "A medication used to induce ovulation.",
-    "clomiphene": "A medication used to induce ovulation."
+    "mif": "appears to be a medication name detected in the prescription. The exact medication and its purpose should be verified with a pharmacist or healthcare provider.",
+    "metformin": "appears to be a medication name detected in the prescription. The exact medication and its purpose should be verified with a pharmacist or healthcare provider.",
+    "letrozole": "appears to be a medication name detected in the prescription. The exact medication and its purpose should be verified with a pharmacist or healthcare provider.",
+    "clomid": "appears to be a medication name detected in the prescription. The exact medication and its purpose should be verified with a pharmacist or healthcare provider.",
+    "clomiphene": "appears to be a medication name detected in the prescription. The exact medication and its purpose should be verified with a pharmacist or healthcare provider."
 }
 
 # --- Model Fallback Layer ---
@@ -560,71 +560,54 @@ def run_prescription_pipeline(extracted_json_str: str) -> dict:
     output_lines = []
     topics_for_search = []
     
-    def _extract_text(item):
+    ocr_conf = data.get("ocr_confidence", "N/A")
+    ext_conf = data.get("extraction_confidence", "N/A")
+
+    def _extract_details(item):
         if isinstance(item, dict):
             # Try to grab common keys the model might hallucinate
-            return str(item.get("name", item.get("condition", item.get("value", item.get("instruction", " ".join(str(v) for v in item.values()))))))
-        return str(item)
+            text = item.get("raw_text") or item.get("name") or item.get("condition") or item.get("instruction")
+            if not text:
+                text = " ".join(str(v) for k, v in item.items() if k not in ["confidence", "parsed_value"])
+            conf = item.get("confidence", 1.0)
+            return str(text), conf
+        return str(item), 1.0
 
-    # Process Medicines
-    medicines = data.get("medicines", [])
-    if medicines:
-        output_lines.append("### Medicines\n")
-        for med in medicines:
-            med_str = _extract_text(med)
-            med_lower = med_str.lower().strip()
-            explanation = "A medication name was detected in the prescription."
-            for key, val in medicine_db.items():
-                if key in med_lower:
-                    explanation = val
-                    topics_for_search.append(key)
-                    break
-            output_lines.append(f"- **{med_str}**\n  *Explanation: {explanation}*\n")
+    def _format_entry(title, items, explanation_fallback, db_lookup=None):
+        if not items:
+            return
+        output_lines.append(f"### {title}\n")
+        for item in items:
+            item_str, conf = _extract_details(item)
+            item_lower = item_str.lower().strip()
+            
+            explanation = explanation_fallback
+            if db_lookup:
+                for key, val in db_lookup.items():
+                    if key in item_lower:
+                        if title == "Lab Values":
+                            explanation = f"**{key.upper()}** (Thyroid Stimulating Hormone) is a hormone used to evaluate thyroid function." if 'tsh' in key else f"This test is often used to evaluate {key.upper()}: {val}"
+                        else:
+                            explanation = val
+                        topics_for_search.append(key)
+                        break
+            
+            # Formatting line with confidence
+            conf_display = f"{float(conf):.2f}" if isinstance(conf, (float, int)) else "N/A"
+            line = f"- **{item_str}**\n  *Explanation: {explanation}*\n  *Confidence: {conf_display}*"
+            if isinstance(conf, (float, int)) and conf < 0.6:
+                line += " ⚠ *Some text may be unclear due to handwriting.*"
+            output_lines.append(line + "\n")
 
-    # Process Conditions
-    conditions = data.get("conditions", [])
-    if conditions:
-        output_lines.append("### Conditions\n")
-        for cond in conditions:
-            cond_str = _extract_text(cond)
-            cond_lower = cond_str.lower().strip()
-            explanation = "This may refer to a medical condition or symptom."
-            for key, val in medical_terms_db.items():
-                if key in cond_lower:
-                    explanation = val
-                    topics_for_search.append(key)
-                    break
-            output_lines.append(f"- **{cond_str}**\n  *Explanation: {explanation}*\n")
+    _format_entry("Medicines", data.get("medicines", []), "A medication name was detected in the prescription.", medicine_db)
+    _format_entry("Conditions", data.get("conditions", []), "This may refer to a medical condition or symptom.", medical_terms_db)
+    _format_entry("Lab Values", data.get("lab_values", []), "This value is commonly associated with laboratory test results.", medical_terms_db)
+    _format_entry("Doctor Instructions", data.get("doctor_instructions", []), "An instruction noted by the doctor.", medical_terms_db)
 
-    # Process Lab Values
-    labs = data.get("lab_values", [])
-    if labs:
-        output_lines.append("### Lab Values\n")
-        for lab in labs:
-            lab_str = _extract_text(lab)
-            lab_lower = lab_str.lower().strip()
-            explanation = "This value is commonly associated with laboratory test results."
-            for key, val in medical_terms_db.items():
-                if key in lab_lower:
-                    explanation = f"This test is often used to evaluate {key.upper()}: {val}"
-                    topics_for_search.append(key)
-                    break
-            output_lines.append(f"- **{lab_str}**\n  *Explanation: {explanation}*\n")
-
-    # Process Doctor Instructions
-    instructions = data.get("doctor_instructions", [])
-    if instructions:
-        output_lines.append("### Doctor Instructions\n")
-        for inst in instructions:
-            inst_str = _extract_text(inst)
-            inst_lower = inst_str.lower().strip()
-            explanation = "An instruction noted by the doctor."
-            for key, val in medical_terms_db.items():
-                if key in inst_lower:
-                    explanation = val
-                    topics_for_search.append(key)
-                    break
-            output_lines.append(f"- **{inst_str}**\n  *Explanation: {explanation}*\n")
+    # Append Extraction Confidence Summary
+    output_lines.append("### Extraction Confidence Summary")
+    output_lines.append(f"- OCR Confidence: {ocr_conf}")
+    output_lines.append(f"- Entity Extraction Confidence: {ext_conf}\n")
 
     disclaimer = "\n> **Disclaimer:** This information is educational and does not replace professional medical advice. Always consult your healthcare provider for actual medical interpretation and treatment."
     
@@ -634,9 +617,29 @@ def run_prescription_pipeline(extracted_json_str: str) -> dict:
     # Fetch optional references using Tavily via search_trusted_sources
     source_urls = []
     if topics_for_search:
-        search_query = " ".join(topics_for_search[:2]) + " meaning explanation"
+        search_query = " ".join(topics_for_search[:2])
         results = search_trusted_sources(search_query)
-        source_urls = results.get("source_urls", [])
+        raw_sources = results.get("source_urls", [])
+
+        # Deduplicate domains and ensure max 5 sources
+        unique_sources = {}
+        for source in raw_sources:
+            domain = get_domain_from_url(source.get("url", ""))
+            if domain and domain not in unique_sources:
+                unique_sources[domain] = source
+        
+        source_urls = list(unique_sources.values())[:5]
+
+        # Ensure video if available
+        has_video = any(s.get("type", "").lower() == "video" for s in source_urls)
+        if not has_video:
+            # We check raw sources for a video
+            videos = [s for s in raw_sources if s.get("type", "").lower() == "video"]
+            if videos:
+                if len(source_urls) == 5:
+                    source_urls[-1] = videos[0]
+                else:
+                    source_urls.append(videos[0])
 
     return {
         "context": context,
@@ -745,11 +748,14 @@ async def analyze_prescription(base64_images: list[str]) -> dict:
                         "You are a medical prescription reader. Analyze the prescription image(s) and extract the information into a strict JSON format.\n"
                         "Return ONLY a JSON object with this exact structure:\n"
                         "{\n"
-                        '  "medicines": [],\n'
-                        '  "conditions": [],\n'
-                        '  "lab_values": [],\n'
-                        '  "doctor_instructions": []\n'
+                        '  "ocr_confidence": 0.0 to 1.0,\n'
+                        '  "extraction_confidence": 0.0 to 1.0,\n'
+                        '  "medicines": [{ "name": "...", "confidence": 0.0 to 1.0 }],\n'
+                        '  "conditions": [{ "name": "...", "confidence": 0.0 to 1.0 }],\n'
+                        '  "lab_values": [{ "raw_text": "e.g., TSH > 21", "parsed_value": 21.0, "confidence": 0.0 to 1.0 }],\n'
+                        '  "doctor_instructions": [{ "instruction": "...", "confidence": 0.0 to 1.0 }]\n'
                         "}\n\n"
+                        "CRITICAL: When extracting lab values, you MUST preserve the original text with operators (e.g., '>', '<', '=') in 'raw_text'. The 'parsed_value' should only contain the numeric format if safe. Do not modify numeric values in raw_text.\n"
                         "If multiple images are provided, they may be pages of the same prescription or separate prescriptions. "
                         "Handle both cases appropriately.\n"
                         "Do NOT provide medical advice or interpretations beyond what is written."
