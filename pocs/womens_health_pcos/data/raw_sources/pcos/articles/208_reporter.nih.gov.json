@@ -1,0 +1,17 @@
+{
+  "source_id": 208,
+  "url": "https://reporter.nih.gov/search/jTifT9Da10aZQe31-9ezAw/project-details/10818355",
+  "title": "RePORT RePORTER",
+  "domain": "reporter.nih.gov",
+  "scraped_at": "2026-03-11T17:17:59.880905",
+  "source_type": "article",
+  "topic": "AMH",
+  "confidence_level": "HIGH",
+  "raw_text": "RePORT ⟩ RePORTER\nWe're sorry but RePORTER doesn't work properly without JavaScript enabled. Please enable it to continue.",
+  "extracted_sections": {
+    "headings": []
+  },
+  "metadata": {
+    "discovery_method": "tavily"
+  }
+}

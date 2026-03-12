@@ -62,3 +62,36 @@ class RetrievalResult(BaseModel):
     context: str = ""
     source_urls: list[SourceReference] = Field(default_factory=list)
     message: str = ""
+
+class SourceRegistryRecord(BaseModel):
+    """Structured record for the source registry table."""
+    source_id: Optional[int] = None
+    url: str
+    canonical_url: Optional[str] = None
+    title: Optional[str] = None
+    domain: str
+    topic: Optional[str] = None
+    source_type: str
+    confidence_level: str
+    discovery_method: Optional[str] = None
+    is_active: bool = True
+    http_status: Optional[int] = None
+    content_hash: Optional[str] = None
+    last_scraped_at: Optional[datetime] = None
+    last_checked_at: Optional[datetime] = None
+    file_path: Optional[str] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+
+class ChunkMetadataRecord(BaseModel):
+    """Structured record for the chunk metadata table."""
+    chunk_id: Optional[int] = None
+    source_id: int
+    chunk_index: int
+    chunk_text: str
+    token_count: Optional[int] = None
+    char_count: Optional[int] = None
+    embedding_status: str = 'pending'
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+

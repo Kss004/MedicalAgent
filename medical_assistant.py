@@ -366,6 +366,71 @@ def _select_diverse_sources(validated: list, max_total: int = MAX_SOURCES) -> li
     return selected
 
 
+def retrieve_community_reports(query: str, limit: int = 3) -> list:
+    """Retrieves anecdotal community experiences from PostgreSQL."""
+    import sys
+    import os
+    pocs_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pocs", "womens_health_pcos")
+    if pocs_path not in sys.path:
+        sys.path.insert(0, pocs_path)
+    
+    from pocs.womens_health_pcos.database.session import SessionLocal
+    from pocs.womens_health_pcos.database.models import SourceRegistry, ChunkMetadata
+    from sqlalchemy import or_
+
+    db = SessionLocal()
+    try:
+        # Filter out common chat words to find the actual condition
+        stop_words = {"experiences", "reddit", "community", "advice", "story", "stories", "what", "how", "are", "with", "for", "the", "some", "someone", "anyone", "else"}
+        keywords = [kw.strip("?.,!") for kw in query.lower().split() if len(kw) > 3 and kw not in stop_words]
+        
+        if not keywords:
+            # If no specific condition, just return recent community posts
+            results = db.query(ChunkMetadata, SourceRegistry).join(
+                SourceRegistry, ChunkMetadata.source_id == SourceRegistry.source_id
+            ).filter(
+                SourceRegistry.source_type == 'community'
+            ).limit(limit).all()
+        else:
+            conditions = []
+            for kw in keywords:
+                conditions.append(ChunkMetadata.chunk_text.ilike(f"%{kw}%"))
+                conditions.append(SourceRegistry.title.ilike(f"%{kw}%"))
+                
+            results = db.query(ChunkMetadata, SourceRegistry).join(
+                SourceRegistry, ChunkMetadata.source_id == SourceRegistry.source_id
+            ).filter(
+                SourceRegistry.source_type == 'community',
+                or_(*conditions)
+            ).limit(limit * 2).all() # Fetch extra in case of duplicates
+        
+        community_sources = []
+        seen_urls = set()
+        for chunk, source in results:
+            if source.url in seen_urls:
+                continue
+            seen_urls.add(source.url)
+            
+            content = chunk.chunk_text.strip() if chunk.chunk_text else (source.title or "Community Experience")
+            community_sources.append({
+                "title": source.title or "Community Experience (Reddit)",
+                "url": source.url,
+                "source_domain": source.domain,
+                "content_type": "ANECDOTAL",
+                "content": content[:800] + "...", # truncate
+                "confidence_score": 30, # Low confidence for reddit
+                "confidence_level": "LOW",
+                "source_label": "Community Experience (Reddit/Quora)"
+            })
+            if len(community_sources) >= limit:
+                break
+        return community_sources
+    except Exception as e:
+        print(f"Error retrieving community reports: {e}")
+        return []
+    finally:
+        db.close()
+
 def search_trusted_sources(query: str) -> dict:
     """
     Three-layer verified medical retrieval pipeline.
@@ -456,12 +521,24 @@ def search_trusted_sources(query: str) -> dict:
                 all_results.append(r)
                 seen_urls.add(r.get("url", ""))
 
+        # Check if community sources are requested
+        community_keywords = ["experience", "experiences", "reddit", "community", "advice", "story", "stories", "someone else", "anyone else", "forum"]
+        needs_community = any(kw in query.lower() for kw in community_keywords)
+        
+        if needs_community:
+            print(f"  [Community] User requested experiential content. Fetching...")
+            community_results = retrieve_community_reports(query, limit=2)
+            for cr in community_results:
+                if cr.get("url", "") not in seen_urls:
+                    all_results.append(cr)
+                    seen_urls.add(cr.get("url", ""))
+
         if not all_results:
             return {"context": "No verified medical sources found for this query.", "source_urls": []}
 
         # Diversity selection
         diverse = _select_diverse_sources(all_results)
-        layer = "local_kb+tavily" if local_results and tavily_validated else "tavily"
+        layer = "local_kb+tavily+community" if needs_community else ("local_kb+tavily" if local_results and tavily_validated else "tavily")
         return _build_response(diverse, query, source_layer=layer)
 
     except Exception as e:
@@ -522,10 +599,10 @@ Response Guidelines:
 - When citing a video source, mention it is a video (e.g., "As explained in the video [Source 3], ...").
 
 Source Rules:
-- Use ONLY the verified sources provided in the context below.
-- Each source has a type (ARTICLE or VIDEO), a confidence score, and a publication source.
-- Prioritize higher confidence sources when information conflicts.
-- If the context does not contain sufficient information, explicitly state: "I don't have enough verified information on this specific topic. Please consult a healthcare provider."
+- Use ONLY the sources provided in the context below.
+- Each source has a type (ARTICLE, VIDEO, or ANECDOTAL), a confidence score, and a publication source.
+- If community/anecdotal sources are provided, you MAY use them to answer questions about experiences, advice, or what people are saying.
+- If the context does not contain sufficient information (such as asking a medical question with no medical sources provided, AND no community experiences provided), explicitly state: "I don't have enough verified information on this specific topic. Please consult a healthcare provider."
 
 You must NEVER:
 - Diagnose medical conditions
@@ -534,9 +611,11 @@ You must NEVER:
 - Hallucinate facts or fabricate sources
 - Use information not present in the provided context
 
+If the user asks for community experiences/advice AND anecdotal sources are provided in the context, answer empathetically using ONLY the Community Experience sources provided. Clearly state that these are anecdotal experiences and not medical advice. Do NOT apologize or refuse to answer if only anecdotal sources are present.
+
 All information is educational only. Always recommend consulting a healthcare professional for personal medical decisions.
 
-Provided Context (Verified Sources):
+Provided Context:
 {context}
 """
 

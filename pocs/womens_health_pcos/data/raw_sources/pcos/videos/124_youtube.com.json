@@ -1,0 +1,15 @@
+{
+  "source_id": 124,
+  "url": "https://www.youtube.com/watch?v=LVOQnyS_mVw",
+  "title": "How I Finally Lost 90+ Pounds After Years of Failed PCOS Diets",
+  "domain": "youtube.com",
+  "scraped_at": "2026-03-11T11:57:32.392263",
+  "source_type": "video",
+  "topic": "diet and PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Simulated transcript extraction for https://www.youtube.com/watch?v=LVOQnyS_mVw.",
+  "extracted_sections": {},
+  "metadata": {
+    "discovery_method": "tavily"
+  }
+}

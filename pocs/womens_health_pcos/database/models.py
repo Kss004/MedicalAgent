@@ -122,3 +122,39 @@ class CommunityReport(Base):
     lifestyle_change = Column(String, nullable=True)
     reported_outcome = Column(String, nullable=True)
     sentiment = Column(String, nullable=True)
+
+class SourceRegistry(Base):
+    """Registry for all discovered sources to be ingested and refreshed."""
+    __tablename__ = "source_registry"
+    
+    source_id = Column(Integer, primary_key=True, index=True)
+    url = Column(String, unique=True, nullable=False, index=True)
+    canonical_url = Column(String, nullable=True)
+    title = Column(String, nullable=True)
+    domain = Column(String, nullable=False, index=True)
+    topic = Column(String, nullable=True)
+    source_type = Column(String, nullable=False)
+    confidence_level = Column(String, nullable=False)
+    discovery_method = Column(String, nullable=True)
+    is_active = Column(Integer, default=1) # Boolean equivalent
+    http_status = Column(Integer, nullable=True)
+    content_hash = Column(String, nullable=True)
+    last_scraped_at = Column(DateTime(timezone=True), nullable=True)
+    last_checked_at = Column(DateTime(timezone=True), nullable=True)
+    file_path = Column(String, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+class ChunkMetadata(Base):
+    """Metadata for textual chunks to be vectorized."""
+    __tablename__ = "chunk_metadata"
+    
+    chunk_id = Column(Integer, primary_key=True, index=True)
+    source_id = Column(Integer, nullable=False, index=True) # Assuming no hard FK restraint in simplest implementation, or DB enforces it
+    chunk_index = Column(Integer, nullable=False)
+    chunk_text = Column(Text, nullable=False)
+    token_count = Column(Integer, nullable=True)
+    char_count = Column(Integer, nullable=True)
+    embedding_status = Column(String, default='pending')
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())

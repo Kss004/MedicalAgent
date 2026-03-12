@@ -1,0 +1,15 @@
+{
+  "source_id": 131,
+  "url": "https://www.youtube.com/watch?v=gfJYLZSSpQs",
+  "title": "Polycystic Ovary Syndrome in the Adolescent, Oluyemisi ... - YouTube",
+  "domain": "youtube.com",
+  "scraped_at": "2026-03-11T11:57:37.121140",
+  "source_type": "video",
+  "topic": "adolescent PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Simulated transcript extraction for https://www.youtube.com/watch?v=gfJYLZSSpQs.",
+  "extracted_sections": {},
+  "metadata": {
+    "discovery_method": "tavily"
+  }
+}

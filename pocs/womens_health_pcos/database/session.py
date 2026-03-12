@@ -12,7 +12,7 @@ DB_URL = os.getenv(
 )
 
 # SQLite needs check_same_thread=False
-connect_args = {"check_same_thread": False} if DB_URL.startswith("sqlite") else {}
+connect_args = {"check_same_thread": False} if DB_URL.startswith("sqlite") else {"options": "-c search_path=pcos"}
 
 engine = create_engine(DB_URL, connect_args=connect_args)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

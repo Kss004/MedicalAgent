@@ -77,3 +77,42 @@ CREATE INDEX IF NOT EXISTS idx_sources_type ON research_sources(content_type);
 CREATE INDEX IF NOT EXISTS idx_sources_confidence ON research_sources(confidence_level);
 CREATE INDEX IF NOT EXISTS idx_symptoms_name ON symptom_patterns(symptom_name);
 CREATE INDEX IF NOT EXISTS idx_lab_markers_name ON lab_markers(marker_name);
+
+-- Source Registry for large-scale ingestion pipeline
+CREATE TABLE IF NOT EXISTS source_registry (
+    source_id SERIAL PRIMARY KEY,
+    url TEXT UNIQUE NOT NULL,
+    canonical_url TEXT,
+    title TEXT,
+    domain TEXT NOT NULL,
+    topic TEXT,
+    source_type TEXT NOT NULL,
+    confidence_level TEXT NOT NULL,
+    discovery_method TEXT,
+    is_active BOOLEAN DEFAULT true,
+    http_status INTEGER,
+    content_hash TEXT,
+    last_scraped_at TIMESTAMP,
+    last_checked_at TIMESTAMP,
+    file_path TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Chunk Metadata for vectorization
+CREATE TABLE IF NOT EXISTS chunk_metadata (
+    chunk_id SERIAL PRIMARY KEY,
+    source_id INTEGER REFERENCES source_registry(source_id) ON DELETE CASCADE,
+    chunk_index INTEGER NOT NULL,
+    chunk_text TEXT NOT NULL,
+    token_count INTEGER,
+    char_count INTEGER,
+    embedding_status TEXT DEFAULT 'pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_source_registry_url ON source_registry(url);
+CREATE INDEX IF NOT EXISTS idx_source_registry_domain ON source_registry(domain);
+CREATE INDEX IF NOT EXISTS idx_source_registry_type_conf ON source_registry(source_type, confidence_level);
+CREATE INDEX IF NOT EXISTS idx_chunk_source_id ON chunk_metadata(source_id);

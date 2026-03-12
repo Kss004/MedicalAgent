@@ -1,0 +1,15 @@
+{
+  "source_id": 181,
+  "url": "https://www.youtube.com/watch?v=88C2El_EIBw",
+  "title": "Polycystic Ovarian Syndrome (PCOS) Symptoms Explained - YouTube",
+  "domain": "youtube.com",
+  "scraped_at": "2026-03-11T17:17:07.047509",
+  "source_type": "video",
+  "topic": "PCOS overview",
+  "confidence_level": "LOW",
+  "raw_text": "Simulated transcript extraction for https://www.youtube.com/watch?v=88C2El_EIBw.",
+  "extracted_sections": {},
+  "metadata": {
+    "discovery_method": "tavily"
+  }
+}
