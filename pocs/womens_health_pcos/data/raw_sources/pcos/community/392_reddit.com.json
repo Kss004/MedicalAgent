@@ -1,0 +1,21 @@
+{
+  "source_id": 392,
+  "url": "https://www.reddit.com/r/PCOS/comments/ol6a2y/chances_of_pregnancy_with_pcos/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:28:15.302693",
+  "source_type": "community",
+  "topic": "fertility outcomes",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\n[deleted]\nChances of pregnancy with PCOS\nIve heard- 1. It’s impossible to get pregnant 2. Your chances are low due to  timing 3. Then I have friends who are diagnosed and get pregnant on the first try/not trying.\nWhat’s the truth?? Is there any??\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of July 16, 2021\nReddit\nreReddit: Top posts of July 2021\nReddit\nreReddit: Top posts of 2021\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Chances of pregnancy with PCOS",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

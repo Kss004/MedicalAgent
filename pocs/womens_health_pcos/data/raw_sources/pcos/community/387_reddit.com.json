@@ -1,0 +1,20 @@
+{
+  "source_id": 387,
+  "url": "https://www.reddit.com/r/PCOS/comments/1o17aw9/suspect_teen_daughter_has_pcos/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:28:04.202138",
+  "source_type": "community",
+  "topic": "adolescent PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nSweet-Fun-Momof-2\nSuspect teen daughter has PCOS\nMy teen daughter has always had darker, coarse hair, facial hair, hair on lower back, and heavy periods since puberty began.  Now at almost 18, she is growing excessive facial hair, hair around nipples and on chest.  She’s devastated.  She also AFRID, so diet is not the best.  And has ADHD.  I suspect she has PCOS based on the symptoms.  She’s very upset, understandably . I’m uncertain what the best next step is to help.  Do I start with her pediatrician? We just had her annual physical with bloodwork and her triglycerides were on the high side, advised diet alteration.  Do we go see an  endocrinologist instead? Take her to her first gynecology appointment instead? Thank you for any guidance.\nRead more\nShare\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Suspect teen daughter has PCOS"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

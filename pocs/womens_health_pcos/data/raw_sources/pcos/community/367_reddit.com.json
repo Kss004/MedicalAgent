@@ -1,0 +1,21 @@
+{
+  "source_id": 367,
+  "url": "https://www.reddit.com/r/crossfit/comments/tfmazq/anyone_with_pcos/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:27:19.477348",
+  "source_type": "community",
+  "topic": "exercise and PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to crossfit\nr/crossfit\n•\n[deleted]\nAnyone with PCOS?\nHey everyone! Needing to lose about 15 kgs and love Crossfit - because of moving countries I haven't practiced in months. I've been reading online that people with PCOS need short, slow workouts. It's borderljne depressing, as I have read some people sau that even playing a sport could worsen pcos. Heck, I saw someone on instagram recommending no more than 15 min walks!\n. I have insulin resistance but haven't had any cysts in my ovaries for some good ten years. I was wondering what's your take in this? Anyone here with PCOS? Crossfit cures my depression - not exaggerating\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of March 16, 2022\nReddit\nreReddit: Top posts of March 2022\nReddit\nreReddit: Top posts of 2022\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Anyone with PCOS?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

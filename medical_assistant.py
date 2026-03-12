@@ -458,16 +458,62 @@ def search_trusted_sources(query: str) -> dict:
         print(f"\n[Pipeline] Query: {query}")
         print(f"[Pipeline] Model: {_active_model}")
 
-        # === Layer 1: Local Knowledge Base ===
-        print("[Layer 1: Local KB]")
-        local_results = kb_search(query, limit=10)
-        print(f"  Found {len(local_results)} local sources.")
+        # === Layer 1: Local Knowledge Base (Chunk-based search) ===
+        print("[Layer 1: Knowledge Base Search]")
+        from pocs.womens_health_pcos.database.session import SessionLocal
+        from pocs.womens_health_pcos.database.models import SourceRegistry, ChunkMetadata
+        from sqlalchemy import or_
 
-        if len(local_results) >= 2:
-            # Enough local sources — skip Tavily entirely
-            print(f"  ✓ Using local KB (skipping Tavily)")
-            diverse = _select_diverse_sources(local_results)
-            return _build_response(diverse, query, source_layer="local_kb")
+        db = SessionLocal()
+        local_results = []
+        try:
+            # Filter out stop words for search
+            stop_words = {"what", "is", "for", "the", "a", "an", "and", "or", "to", "of", "in"}
+            search_keywords = [kw.strip("?.,!") for kw in query.lower().split() if len(kw) > 3 and kw not in stop_words]
+            
+            if search_keywords:
+                query_filter = []
+                for kw in search_keywords:
+                    query_filter.append(ChunkMetadata.chunk_text.ilike(f"%{kw}%"))
+                
+                # Search chunks in the main registry
+                results = db.query(ChunkMetadata, SourceRegistry).join(
+                    SourceRegistry, ChunkMetadata.source_id == SourceRegistry.source_id
+                ).filter(
+                    SourceRegistry.is_active == 1,
+                    or_(*query_filter)
+                ).order_by(SourceRegistry.confidence_level.desc()).limit(15).all()
+                
+                seen_urls = set()
+                for chunk, source in results:
+                    if source.url in seen_urls:
+                        # Append content if already seen? Or just use first match.
+                        # For "all info", we could aggregate chunks, but for now we'll pick distinct sources.
+                        continue
+                    seen_urls.add(source.url)
+                    
+                    local_results.append({
+                        "title": source.title or "Medical Resource",
+                        "url": source.url,
+                        "source_domain": source.domain,
+                        "content_type": source.source_type.upper(),
+                        "content": chunk.chunk_text,
+                        "confidence_score": 90 if source.confidence_level == "HIGH" else 70,
+                        "confidence_level": source.confidence_level,
+                        "source_label": _get_source_label(source.domain)
+                    })
+        except Exception as e:
+            print(f"Error searching local DB: {e}")
+        finally:
+            db.close()
+
+        print(f"  Found {len(local_results)} local source chunks.")
+
+        if len(local_results) >= 5:
+            # We have enough info to satisfy "all info" requirement
+            print(f"  ✓ Using local registry (skipping Tavily)")
+            # Unlike select_diverse_sources, we might want to keep multiple chunks from same source if they are relevant
+            return _build_response(local_results[:10], query, source_layer="local_registry")
 
         # === Layer 2: Tavily Fallback ===
         print("[Layer 2: Tavily Fallback]")

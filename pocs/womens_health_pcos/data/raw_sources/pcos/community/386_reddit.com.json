@@ -1,0 +1,21 @@
+{
+  "source_id": 386,
+  "url": "https://www.reddit.com/r/PCOS/comments/1euv3yc/what_was_puberty_like_for_you/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:28:01.924503",
+  "source_type": "community",
+  "topic": "adolescent PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\n[deleted]\nWhat was puberty like for you?\nSorry, this post was deleted by the person who originally posted it.\nShare\nTop Posts\nReddit\nreReddit: Top posts of August 17, 2024\nReddit\nreReddit: Top posts of August 2024\nReddit\nreReddit: Top posts of 2024\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "What was puberty like for you?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

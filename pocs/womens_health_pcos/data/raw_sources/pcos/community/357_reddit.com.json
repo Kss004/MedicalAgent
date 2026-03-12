@@ -1,0 +1,25 @@
+{
+  "source_id": 357,
+  "url": "https://www.reddit.com/r/PCOS/comments/1dmf4ve/my_hot_takes_on_pcos_and_obesity/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:26:55.744350",
+  "source_type": "community",
+  "topic": "obesity and lean PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nMurky_Ad9491\nmy hot takes on PCOS and obesity\n1 birth control pills are prescribed too easily (mine almost killed me) (i got gallstones)\n2 obesity is a disease\n3there is no shame in taking GLP1s\n4 OGBYNs should not always prescribe birth control for PCOS\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of June 23, 2024\nReddit\nreReddit: Top posts of June 2024\nReddit\nreReddit: Top posts of 2024\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "my hot takes on PCOS and obesity",
+      "1 birth control pills are prescribed too easily (mine almost killed me) (i got gallstones)",
+      "2 obesity is a disease",
+      "3there is no shame in taking GLP1s",
+      "4 OGBYNs should not always prescribe birth control for PCOS",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

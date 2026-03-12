@@ -1,0 +1,20 @@
+{
+  "source_id": 278,
+  "url": "https://www.reddit.com/r/PCOS/comments/1ohmv2l/i_keep_seeing_people_online_saying_that_birth/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:22:44.077638",
+  "source_type": "community",
+  "topic": "hyperandrogenism",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nFunnySlip\nI keep seeing people online saying that birth control is a \"bandaid\" to PCOS and isn't actually fixing the issue but I don't see anyone saying how to actually fix it\nJust got diagnosed with PCOS and haven't gotten a call from my doctor to talk about solutions. I understand insulin resistance may be an issue so I will ask about that, but other than that, if birth control is a bandaid, what is the alternative? I don't want children so infertility issues aren't a concern. Everyone keeps saying it's a bandaid, doesn't solve the underlying issue, but then fail to mention what will.\nRead more\nShare\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "I keep seeing people online saying that birth control is a \"bandaid\" to PCOS and isn't actually fixing the issue but I don't see anyone saying how to actually fix it"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

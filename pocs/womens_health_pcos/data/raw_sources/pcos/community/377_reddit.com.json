@@ -1,0 +1,21 @@
+{
+  "source_id": 377,
+  "url": "https://www.reddit.com/r/PCOS/comments/18cm8jl/is_there_anyone_here_who_cured_pcos_with_just/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:27:43.430018",
+  "source_type": "community",
+  "topic": "diet and PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nPunolf\nIs there anyone here who cured pcos with just diet and lifestyle?\nI have been seeing a lot of posts in here where they are taking medications to cure it and the same will be suggested by doctors as well, but I'm against these and I believe that your food should be your medicines.\nIs there anyone who successfully cured pcos? Can you please tell me what all changes you did to your lifestyle and diet that really helped you in the long run.\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of December 7, 2023\nReddit\nreReddit: Top posts of December 2023\nReddit\nreReddit: Top posts of 2023\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Is there anyone here who cured pcos with just diet and lifestyle?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

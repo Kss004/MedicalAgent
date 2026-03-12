@@ -1,0 +1,22 @@
+{
+  "source_id": 431,
+  "url": "https://www.acog.org/womens-health/videos/polycystic-ovary-syndrome",
+  "title": "ACOG Explains: Polycystic Ovary Syndrome  | ACOG",
+  "domain": "acog.org",
+  "scraped_at": "2026-03-12T10:29:40.304147",
+  "source_type": "guideline",
+  "topic": "PCOS overview",
+  "confidence_level": "HIGH",
+  "raw_text": "ACOG Explains: Polycystic Ovary Syndrome  | ACOG\nWe Use Cookies\nACOG uses cookies, pixels and similar technologies to personalize your website experience. By clicking “continue” or continuing to use our site, you agree to our\nPrivacy Policy\n.\nContinue\nSkip to main content\nHealthy Living\nScreening & Prevention\nSexual Health & Relationships\nBirth Control\nPreparing for Surgery Checklist\nHealthy Teens\nHealthy Aging\nMenopause\nMenopause Book\nPregnancy\nGetting Pregnant\nDuring Pregnancy\nLabor and Delivery\nAfter Pregnancy\nPregnancy Book\nTopics A-Z\nTopics A-Z\nCOVID-19\nCancer\nMental Health\nPrenatal Testing\nMenopause\nMenstrual Health\nHeart Health\nVaccines\nSpecial Procedures\nDiseases and Conditions\nBrowse All Topics\nView All Frequently Asked Questions\nExperts & Stories\nThe Latest\nAsk ACOG\nFrom the American College of Obstetricians & Gynecologists\nMenu\nVideo\nACOG Explains: Polycystic Ovary Syndrome\nPCOS, or polycystic ovary syndrome, is a condition caused by a hormone imbalance. There are long-term health-risks with PCOS, but treatment can help reduce the risks. Watch this video to learn about the symptoms of PCOS and treatment options that can improve your future health.\nLearn more about PCOS:\nPolycystic Ovary Syndrome (PCOS)\nGetting Pregnant Despite PCOS\nCan birth control pills cure PCOS?\nPEV013\nPublished: September 2024\nLast reviewed:\nSeptember 2024\nTopics:\nDiseases and Conditions\nFertility and Infertility\nMenstrual Health\nClinicians: Subscribe to Digital Pamphlets\nExplore ACOG's library of patient education pamphlets.\nPamphlets\nAdvertisement\nIn This Section\nWhat to Read Next\nVideo\nGet Your Recommended Vaccines During Pregnancy\nVideo\nACOG Explains: Mental Health and Pregnancy\nVideo\nACOG Explains: Prenatal Genetic Testing\nFAQs\nRoutine Tests During Pregnancy",
+  "extracted_sections": {
+    "headings": [
+      "ACOG Explains: Polycystic Ovary Syndrome",
+      "Clinicians: Subscribe to Digital Pamphlets",
+      "What to Read Next"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

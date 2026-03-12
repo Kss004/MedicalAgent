@@ -1,0 +1,21 @@
+{
+  "source_id": 321,
+  "url": "https://www.reddit.com/r/IVF/comments/1leludb/any_ladies_with_pcos_and_high_amh/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:25:37.824802",
+  "source_type": "community",
+  "topic": "AMH",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to IVF\nr/IVF\n•\nrazzaldazzal13\nAny ladies with PCOS and high AMH?\nI am almost 29 and I’m going to be doing my first IVF cycle next month. I have PCOS with anovulation and a very high AMH (12.6) and I am wondering if there are any women who have had similar stats and what protocols you did for your IVF cycle? Are there any specific tips or things you learned from trial and error with IVF? I am so nervous and worried about going through this and facing complications or delays due to my condition. Thank you in advance!\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of June 18, 2025\nReddit\nreReddit: Top posts of June 2025\nReddit\nreReddit: Top posts of 2025\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Any ladies with PCOS and high AMH?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

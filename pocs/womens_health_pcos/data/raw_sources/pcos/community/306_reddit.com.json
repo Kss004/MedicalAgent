@@ -1,0 +1,21 @@
+{
+  "source_id": 306,
+  "url": "https://www.reddit.com/r/IVF/comments/1h2ev4l/anovulatory_pcos_fet_protocol/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:23:45.613100",
+  "source_type": "community",
+  "topic": "anovulation",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to IVF\nr/IVF\n•\npurpleshoes3\nAnovulatory PCOS FET protocol\nHad a failed FET on a fully medicated cycle and was wondering if there are others who switched to a modified natural the next time around. I don't ovulate regularly on my own and have had mixed results with Letrozole medicated cycles. Sometimes I ovulated with trigger and other times I ovulated early so it was unpredictable.\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of November 29, 2024\nReddit\nreReddit: Top posts of November 2024\nReddit\nreReddit: Top posts of 2024\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Anovulatory PCOS FET protocol",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "source_id": 263,
+  "url": "https://www.reddit.com/r/PCOS/comments/ozot6y/i_think_insulin_resistance_was_the_cause_of_my/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:22:13.414841",
+  "source_type": "community",
+  "topic": "insulin resistance",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\npoodlepie256\nI think insulin resistance was the cause of my depression\nHey cysters 👋🏾 So this year I’ve made big leaps in understanding and managing my PCOS, including getting on Metformin to manage the insulin resistance. Metformin has been a miracle drug for me in many ways, but I think the biggest miracle of all is that it took away my depression. I have been severely depressed for five years; tried anti-depressants, therapy, exercise, life changes etc and nothing really worked long term. When I started Metformin and lost a bit of weight my head fog just kind of cleared and I don’t look at everything through the lens of utter depression now. I suspected PCOS had a relation to my mental health but I didn’t think it was this extreme. It’s been months and the head fog hasn’t come back despite life’s difficulties. Has anyone else had this experience? Is there any faucet of our lives PCOS doesn’t affect?\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of August 7, 2021\nReddit\nreReddit: Top posts of August 2021\nReddit\nreReddit: Top posts of 2021\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "I think insulin resistance was the cause of my depression",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

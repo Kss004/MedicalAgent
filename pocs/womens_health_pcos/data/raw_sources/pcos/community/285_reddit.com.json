@@ -1,0 +1,21 @@
+{
+  "source_id": 285,
+  "url": "https://www.reddit.com/r/PCOS/comments/1f9pyi8/my_pcos_hirsutism_makes_me_feel_like_im_better/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:22:59.537901",
+  "source_type": "community",
+  "topic": "hirsutism",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\n[deleted]\nMy PCOS (Hirsutism) makes me feel like I’m better off dead.\nSorry, this post was deleted by the person who originally posted it.\nShare\nTop Posts\nReddit\nreReddit: Top posts of September 5, 2024\nReddit\nreReddit: Top posts of September 2024\nReddit\nreReddit: Top posts of 2024\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "My PCOS (Hirsutism) makes me feel like I’m better off dead.",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

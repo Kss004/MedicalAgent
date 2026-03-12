@@ -1,0 +1,21 @@
+{
+  "source_id": 311,
+  "url": "https://www.reddit.com/r/Endo/comments/12p78c9/endo_and_now_pcos_morphology/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:23:55.198241",
+  "source_type": "community",
+  "topic": "ovarian morphology",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to Endo\nr/Endo\n•\nCorguskiMama\nEndo and now PCOS morphology?\nI’m 1.5 years post excision and my fabulous doctor left the hospital. New doctor today says I have PCOS morphology but they don’t see any Endo on the ultrasound and my tumor marker tests and amh tests came back looking good. I’m in a country where I don’t speak the language and drs share less than at home. Can someone clarify…does this mean I have Pcos??\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of April 17, 2023\nReddit\nreReddit: Top posts of April 2023\nReddit\nreReddit: Top posts of 2023\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Endo and now PCOS morphology?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

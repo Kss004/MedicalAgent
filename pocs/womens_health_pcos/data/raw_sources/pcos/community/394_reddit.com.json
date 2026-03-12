@@ -1,0 +1,21 @@
+{
+  "source_id": 394,
+  "url": "https://www.reddit.com/r/IVF/comments/x63l9z/if_you_have_pcos_what_was_your_outcome_with_ivf/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:28:20.856096",
+  "source_type": "community",
+  "topic": "fertility outcomes",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to IVF\nr/IVF\n•\nvintageandgreen\nIf you have PCOS what was your outcome with ivf?\nI’m currently on day 3 of stims and anxious to see what my outcome will be. I have pcos, and know quality is likely a big issue. I am 35, almost 36 and have been trying 3 years.\nIf you have pcos and have done ivf, what was your end outcome, how many embryos did you have - how many times did you do ivf?\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of September 5, 2022\nReddit\nreReddit: Top posts of September 2022\nReddit\nreReddit: Top posts of 2022\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "If you have PCOS what was your outcome with ivf?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

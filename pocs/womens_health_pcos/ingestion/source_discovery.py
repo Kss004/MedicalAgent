@@ -56,7 +56,17 @@ TOPICS = [
     "emotional / mental health aspects",
     "long-term cardiovascular risk",
     "diabetes risk",
-    "pregnancy-related implications"
+    "pregnancy-related implications",
+    "metabolic health and PCOS",
+    "skin manifestations of PCOS",
+    "weight management for PCOS",
+    "PCOS and psychological well-being",
+    "endocrine disruptors and PCOS",
+    "PCOS diagnosis in lean women",
+    "Ovarian Reserve and PCOS",
+    "Nutritional supplements for PCOS",
+    "Gut microbiome and PCOS",
+    "Sleep apnea and PCOS"
 ]
 
 def classify_source_type(url: str, domain: str) -> str:
@@ -136,7 +146,7 @@ def run_discovery():
         valid_domains = HIGH_DOMAINS + MEDIUM_DOMAINS
         
         try:
-            res = tvly.search(query=topic + " PCOS women's health", max_results=5, include_domains=valid_domains)
+            res = tvly.search(query=topic + " PCOS women's health", max_results=25, include_domains=valid_domains)
             for r in res.get("results", []):
                 domain = get_domain_from_url(r["url"])
                 
@@ -162,7 +172,7 @@ def run_discovery():
             
         # Optional LOW confidence search limits
         try:
-            res_low = tvly.search(query=topic + " PCOS personal experience", max_results=2, include_domains=LOW_DOMAINS)
+            res_low = tvly.search(query=topic + " PCOS personal experience", max_results=5, include_domains=LOW_DOMAINS)
             for r in res_low.get("results", []):
                 domain = get_domain_from_url(r["url"])
                 if get_source_by_url(db, r["url"]):

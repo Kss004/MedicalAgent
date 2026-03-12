@@ -1,0 +1,18 @@
+{
+  "source_id": 258,
+  "url": "https://www.youtube.com/watch?v=EASxlRrbvbM",
+  "title": "Living with PCOS – Kate’s Story - YouTube",
+  "domain": "youtube.com",
+  "scraped_at": "2026-03-12T10:22:02.813956",
+  "source_type": "video",
+  "topic": "PCOS overview",
+  "confidence_level": "LOW",
+  "raw_text": "Living with PCOS – Kate’s Story - YouTube\nAbout\nPress\nCopyright\nContact us\nCreator\nAdvertise\nDevelopers\nTerms\nPrivacy\nPolicy & Safety\nHow YouTube works\nTest new features\n© 2026 Google LLC",
+  "extracted_sections": {
+    "headings": []
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

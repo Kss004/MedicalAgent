@@ -1,0 +1,21 @@
+{
+  "source_id": 344,
+  "url": "https://www.reddit.com/r/PCOS/comments/1cxl03l/how_many_of_you_also_have_thyroid_issues/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:26:28.910265",
+  "source_type": "community",
+  "topic": "hypothyroidism and menstrual health",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nCommercial-Call5675\nHow many of you also have thyroid issues?\nHello cysters,\nthis might be a weird question, but I'm just curious how many of you deal with thyroid on top of PCOS. I just sent out blood work to get mine checked, I won't hear back for a week or two. It's been something on my mind since I've struggled so hard to regain control of my body. I'm on 1200 calories a day and I'm either stuck on a plateau or barely losing at all. I'm so strict about tracking everything, it's so frustrating. Does anyone care to share their experiences?\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of May 21, 2024\nReddit\nreReddit: Top posts of May 2024\nReddit\nreReddit: Top posts of 2024\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "How many of you also have thyroid issues?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

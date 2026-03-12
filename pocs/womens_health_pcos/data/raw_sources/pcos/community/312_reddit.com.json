@@ -1,0 +1,20 @@
+{
+  "source_id": 312,
+  "url": "https://www.reddit.com/r/PCOS/comments/1rnwf75/i_was_recently_diagnosed_with_pcos_and_i_am_not/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:23:57.049211",
+  "source_type": "community",
+  "topic": "ovarian morphology",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nAutomaticAmoeba6897\nI was recently diagnosed with PCOS and I am not sure what to do\nIm currently 17 and went to a radiologist who said based on my results I have polycystic ovarian morphology.\nI haven’t really had the time to visit a gynaecologist and I don’t have a female figure in my life who can advise me. Im not sure what should be my next steps. Last month post diagnosis my period came on time but this month its late again.\nRead more\nShare\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "I was recently diagnosed with PCOS and I am not sure what to do"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

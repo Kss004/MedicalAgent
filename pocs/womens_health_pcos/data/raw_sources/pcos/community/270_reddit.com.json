@@ -1,0 +1,20 @@
+{
+  "source_id": 270,
+  "url": "https://www.reddit.com/r/PCOS/comments/1nujdng/periods_suddenly_irregular_after_always_being/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:22:32.149626",
+  "source_type": "community",
+  "topic": "irregular menstrual cycles",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nHaunted-nightmares\nPeriods suddenly irregular after always being regular?\nHi all,\nSo I was diagnosed with PCOS a year ago after a follow up ultrasound for a burst cyst showed polycystic ovaries. I also show signs of high androgens (lots of acne issues starting around my diagnosis, despite never having acne as a teen), and insulin resistance (sugar cravings and high triglycerides, which has been a lifelong issue). However, my periods have always been super regular (28-32 days always). However, these past two months my periods seem to be kind of wonky. Although I can’t be sure because my period app lost all my data in July, last month my period didn’t occur till day 37. Now, this month, my period hasn’t started and it’s already day 40. I’m having a lot of hormonal issues like breast tenderness and vaginal dryness/pain. Can your periods suddenly become irregular like this if you have PCOS? It’s just so weird because I have been regular all my life. I took a pregnancy test on day 33 and day 39 and I am not pregnant. I’m going to take another this weekend just to be sure but my boyfriend and I use protection and have had no instances of leaks or breakage so I don’t think that’s it. I am just not sure what to do or how to make my periods normal again\nRead more\nShare\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Periods suddenly irregular after always being regular?"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

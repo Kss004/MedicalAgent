@@ -1,0 +1,21 @@
+{
+  "source_id": 336,
+  "url": "https://www.reddit.com/r/TTC_PCOS/comments/16dvtrd/thyroid_issues/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:26:10.197331",
+  "source_type": "community",
+  "topic": "thyroid and fertility",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to TTC_PCOS\nr/TTC_PCOS\n•\n[deleted]\nThyroid issues\nSorry, this post was deleted by the person who originally posted it.\nShare\nTop Posts\nReddit\nreReddit: Top posts of September 9, 2023\nReddit\nreReddit: Top posts of September 2023\nReddit\nreReddit: Top posts of 2023\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Thyroid issues",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

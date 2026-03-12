@@ -1,0 +1,21 @@
+{
+  "source_id": 265,
+  "url": "https://www.reddit.com/r/PCOS/comments/1e7dgur/pcos_experience_with_low_bmi_and_no_insulin/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:22:17.997962",
+  "source_type": "community",
+  "topic": "insulin resistance",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nNeharika1203\nPCOS Experience with low BMI and no insulin resistance\nWhenever I go online to search about PCOS I always see tips for \"weight loss\" or \"insulin resistance\". My BMI is  18.2 and I do not have insulin resistance. My ultrasound confirms PCOS and yes I will go to a gynecologist too. But I wanted to know the experiences of others with the same experience and hopefully some advice on dealing with it?\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of July 19, 2024\nReddit\nreReddit: Top posts of July 2024\nReddit\nreReddit: Top posts of 2024\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "PCOS Experience with low BMI and no insulin resistance",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

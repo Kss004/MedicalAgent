@@ -1,0 +1,21 @@
+{
+  "source_id": 366,
+  "url": "https://www.reddit.com/r/PCOS/comments/1dtl7co/which_exercises_have_you_found_sustainable_and/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:27:17.698050",
+  "source_type": "community",
+  "topic": "exercise and PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nprobablyhan\nWhich exercises have you found sustainable and good for PCOS?\nHi everyone!\nI’ve lost a fair bit of weight this year from calorie counting, healthy choices, metaformin - but i’d like to get fitter!\nWalking is the obvious option, want to do 10k steps a day. However I know high cardio isn’t great for PCOS so i’m keen to hear which exercises you guys enjoy?\nYoga? Weight lifting?\nDesperate for whatever I introduce to be something maintainable, so any tips are greatly appreciated\nxx\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of July 2, 2024\nReddit\nreReddit: Top posts of July 2024\nReddit\nreReddit: Top posts of 2024\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Which exercises have you found sustainable and good for PCOS?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

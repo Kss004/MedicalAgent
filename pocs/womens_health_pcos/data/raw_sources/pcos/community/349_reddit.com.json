@@ -1,0 +1,20 @@
+{
+  "source_id": 349,
+  "url": "https://www.reddit.com/r/PCOS/comments/1r08x1y/anyone_else_with_pcos_doing_everything_right_but/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:26:40.127746",
+  "source_type": "community",
+  "topic": "metabolic syndrome",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to PCOS\nr/PCOS\n•\nSparkuHub\nAnyone else with PCOS doing everything right but the weight just wont move?\nI honestly dont know if this is just me or a PCOS thing. I eat pretty well, I try to be consistent, but my weight either stays the same or goes down painfully slow. It’s so discouraging when you’re putting effort and your body just doesnt respond. Sometimes it feels like PCOS makes weight loss 10x harder than it should be.\nDoes anyone else deal with this? How long did it take you to see any progress?\nRead more\nShare\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Anyone else with PCOS doing everything right but the weight just wont move?"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

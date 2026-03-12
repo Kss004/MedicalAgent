@@ -1,0 +1,21 @@
+{
+  "source_id": 378,
+  "url": "https://www.reddit.com/r/loseit/comments/tuidch/i_just_got_diagnosed_today_with_pcos_and_my/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:27:45.359071",
+  "source_type": "community",
+  "topic": "diet and PCOS",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to loseit\nr/loseit\n•\n[deleted]\nI just got diagnosed today with PCOS and my doctor told me that I need to lose weight but I have no idea where to start.\nSorry, this post was deleted by the person who originally posted it.\nShare\nTop Posts\nReddit\nreReddit: Top posts of April 2, 2022\nReddit\nreReddit: Top posts of April 2022\nReddit\nreReddit: Top posts of 2022\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "I just got diagnosed today with PCOS and my doctor told me that I need to lose weight but I have no idea where to start.",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}

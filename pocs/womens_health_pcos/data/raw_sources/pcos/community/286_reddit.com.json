@@ -1,0 +1,21 @@
+{
+  "source_id": 286,
+  "url": "https://www.reddit.com/r/LesbianActually/comments/18gsa64/experience_with_women_who_have_hirsutism/",
+  "title": "Reddit - The heart of the internet",
+  "domain": "reddit.com",
+  "scraped_at": "2026-03-12T10:23:01.905368",
+  "source_type": "community",
+  "topic": "hirsutism",
+  "confidence_level": "LOW",
+  "raw_text": "Reddit - The heart of the internet\nSkip to main content\nGo to LesbianActually\nr/LesbianActually\n•\nthrowawayyy27275\nExperience with women who have hirsutism?\nHave any of you had experience with women who have excess body hair growth? For example, excessive amount of hair around the nipples, chest, inner thighs, stomach, etc?\nRead more\nShare\nTop Posts\nReddit\nreReddit: Top posts of December 12, 2023\nReddit\nreReddit: Top posts of December 2023\nReddit\nreReddit: Top posts of 2023\nReddit Rules\nPrivacy Policy\nUser Agreement\nAccessibility\nReddit, Inc. © 2026. All rights reserved.\nExpand Navigation\nCollapse Navigation",
+  "extracted_sections": {
+    "headings": [
+      "Experience with women who have hirsutism?",
+      "Top Posts"
+    ]
+  },
+  "metadata": {
+    "scraper_method": "bs4_fallback",
+    "discovery_method": "tavily"
+  }
+}
