@@ -8,6 +8,7 @@ import os
 import base64
 
 from medical_assistant import ask_health_assistant, analyze_prescription
+from pocs.womens_health_pcos.api.questionnaire_api import router as questionnaire_router
 
 app = FastAPI(title="Medical Assistant API")
 
@@ -19,6 +20,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(questionnaire_router)
 
 class ChatRequest(BaseModel):
     query: str
@@ -43,6 +46,10 @@ async def chat(request: ChatRequest):
         response=result.get("response", "Error generating response."),
         sources=result.get("sources", [])
     )
+
+@app.get("/api/health")
+async def health_check():
+    return {"status": "healthy", "version": "1.0.0"}
 
 ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp"}
 MAX_SIZE = 10 * 1024 * 1024  # 10MB

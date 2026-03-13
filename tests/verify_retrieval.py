@@ -6,7 +6,7 @@ import os
 import asyncio
 
 # Add project paths
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from medical_assistant import search_trusted_sources
 

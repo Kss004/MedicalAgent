@@ -2,7 +2,7 @@ import os
 import sys
 
 # Add root project path to sys.path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pocs.womens_health_pcos.database.session import init_db
 from pocs.womens_health_pcos.ingestion import guidelines_ingest, population_ingest, community_ingest
