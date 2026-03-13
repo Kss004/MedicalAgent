@@ -316,53 +316,68 @@ def _get_source_label(domain: str) -> str:
 
 def _select_diverse_sources(validated: list, max_total: int = MAX_SOURCES) -> list:
     """
-    Select up to max_total sources. Prefers diversity but does NOT require it.
+    Select up to max_total sources, ensuring a 'mix and match' of 
+    high-confidence medical sources and community experiences.
 
-    Strategy:
-    1. Sort all sources by confidence_score descending.
-    2. Try to pick one source per unique domain first.
-    3. Fill remaining slots from the best remaining sources (may repeat domains).
-    4. Try to include 1 VIDEO if available, but do NOT require it.
-    5. Even 1 source is valid — no minimum requirement.
+    Target Mix: 3-4 Medical sources, 1-2 Community/Anecdotal sources.
     """
     all_sources = list(validated)
-    all_sources.sort(key=lambda x: x.get("confidence_score", 0), reverse=True)
-
     if not all_sources:
         return []
+
+    # Separate into categories
+    medical_sources = [s for s in all_sources if s.get("content_type") != "ANECDOTAL"]
+    community_sources = [s for s in all_sources if s.get("content_type") == "ANECDOTAL"]
+
+    # Sort each by confidence
+    medical_sources.sort(key=lambda x: x.get("confidence_score", 0), reverse=True)
+    community_sources.sort(key=lambda x: x.get("confidence_score", 0), reverse=True)
 
     selected = []
     seen_domains = set()
 
-    # First pass: pick best source from each unique domain (diversity preference)
-    for s in all_sources:
-        if len(selected) >= max_total:
+    # 1. Fill medical sources (First pass: unique domains)
+    for s in medical_sources:
+        if len(selected) >= max_total - 1: # Leave at least one slot for community
             break
         domain = s.get("source_domain", "")
         if domain not in seen_domains:
             seen_domains.add(domain)
             selected.append(s)
 
-    # Second pass: fill remaining slots from best remaining sources
-    for s in all_sources:
+    # 2. Add up to 2 community sources if available
+    for s in community_sources:
+        if len(selected) >= max_total:
+            break
+        if len([x for x in selected if x.get("content_type") == "ANECDOTAL"]) >= 2:
+            break
+        selected.append(s)
+
+    # 3. Fill remaining slots with best remaining medical sources
+    for s in medical_sources:
         if len(selected) >= max_total:
             break
         if s not in selected:
             selected.append(s)
 
-    # Try to include 1 video if available and not already included
+    # Ensure at least 1 video if possible
     has_video = any(s.get("content_type") == "VIDEO" for s in selected)
     if not has_video:
-        videos = [s for s in all_sources if s.get("content_type") == "VIDEO" and s not in selected]
+        videos = [s for s in medical_sources if s.get("content_type") == "VIDEO" and s not in selected]
         if videos:
-            # Replace the lowest-scored article with the best video
+            idx_to_replace = -1
+            # Replace a medical source if we have many, otherwise just append if slot open
             if len(selected) >= max_total:
-                selected[-1] = videos[0]
+                # Find the lowest score medical source to replace
+                for i in range(len(selected)-1, -1, -1):
+                    if selected[i].get("content_type") != "ANECDOTAL":
+                        selected[i] = videos[0]
+                        break
             else:
                 selected.append(videos[0])
 
-    print(f"  Diversity: {len(set(s.get('source_domain','') for s in selected))} unique domains, "
-          f"{sum(1 for s in selected if s.get('content_type')=='VIDEO')} videos")
+    print(f"  Mixed Sources: {sum(1 for s in selected if s.get('content_type') != 'ANECDOTAL')} medical, "
+          f"{sum(1 for s in selected if s.get('content_type') == 'ANECDOTAL')} community")
     return selected
 
 
@@ -492,11 +507,15 @@ def search_trusted_sources(query: str) -> dict:
                         continue
                     seen_urls.add(source.url)
                     
+                    source_type = source.source_type.upper()
+                    # Normalize community/reddit sources to ANECDOTAL for the mixer
+                    content_type = "ANECDOTAL" if source_type == 'COMMUNITY' else source_type
+                    
                     local_results.append({
                         "title": source.title or "Medical Resource",
                         "url": source.url,
                         "source_domain": source.domain,
-                        "content_type": source.source_type.upper(),
+                        "content_type": content_type,
                         "content": chunk.chunk_text,
                         "confidence_score": 90 if source.confidence_level == "HIGH" else 70,
                         "confidence_level": source.confidence_level,
@@ -508,12 +527,6 @@ def search_trusted_sources(query: str) -> dict:
             db.close()
 
         print(f"  Found {len(local_results)} local source chunks.")
-
-        if len(local_results) >= 5:
-            # We have enough info to satisfy "all info" requirement
-            print(f"  ✓ Using local registry (skipping Tavily)")
-            # Unlike select_diverse_sources, we might want to keep multiple chunks from same source if they are relevant
-            return _build_response(local_results[:10], query, source_layer="local_registry")
 
         # === Layer 2: Tavily Fallback ===
         print("[Layer 2: Tavily Fallback]")
@@ -567,24 +580,20 @@ def search_trusted_sources(query: str) -> dict:
                 all_results.append(r)
                 seen_urls.add(r.get("url", ""))
 
-        # Check if community sources are requested
-        community_keywords = ["experience", "experiences", "reddit", "community", "advice", "story", "stories", "someone else", "anyone else", "forum"]
-        needs_community = any(kw in query.lower() for kw in community_keywords)
-        
-        if needs_community:
-            print(f"  [Community] User requested experiential content. Fetching...")
-            community_results = retrieve_community_reports(query, limit=2)
-            for cr in community_results:
-                if cr.get("url", "") not in seen_urls:
-                    all_results.append(cr)
-                    seen_urls.add(cr.get("url", ""))
+        # Always try to fetch some community sources to provide a "mixed" perspective
+        print(f"  [Community] Fetching experiential content for mixed perspective...")
+        community_results = retrieve_community_reports(query, limit=3)
+        for cr in community_results:
+            if cr.get("url", "") not in seen_urls:
+                all_results.append(cr)
+                seen_urls.add(cr.get("url", ""))
 
         if not all_results:
             return {"context": "No verified medical sources found for this query.", "source_urls": []}
 
-        # Diversity selection
+        # Diversity selection (Mix and Match)
         diverse = _select_diverse_sources(all_results)
-        layer = "local_kb+tavily+community" if needs_community else ("local_kb+tavily" if local_results and tavily_validated else "tavily")
+        layer = "local_kb+tavily+community_mixed"
         return _build_response(diverse, query, source_layer=layer)
 
     except Exception as e:
