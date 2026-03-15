@@ -12,3 +12,5 @@ sqlalchemy
 psycopg2-binary
 biopython
 praw
+apscheduler
+sqlalchemy-apscheduler

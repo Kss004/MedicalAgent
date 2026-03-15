@@ -15,8 +15,8 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 
 from pocs.womens_health_pcos.database.session import SessionLocal, init_db
-from pocs.womens_health_pcos.database.models import SourceRegistry
-from pocs.womens_health_pcos.database.registry_db import update_source
+from pocs.womens_health_pcos.database.models import Source, SourcePage
+from pocs.womens_health_pcos.database.registry_db import save_page_content
 from pocs.womens_health_pcos.processing.text_chunker import process_source_chunks
 
 BASE_STORAGE_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "raw_sources")
@@ -67,85 +67,87 @@ def bs4_fallback(url: str):
         print(f"[Fallback] BeautifulSoup failed for {url}: {e}")
         return None
 
-def scrape_and_store(db, source: SourceRegistry):
+def scrape_and_store(db, page: SourcePage):
     """Scrape a single URL using Notte or Fallback, then store as JSON and update DB."""
-    print(f"Scraping: {source.url}")
+    print(f"Scraping: {page.page_url}")
     
+    # Get associated Source for metadata
+    source = db.query(Source).filter(Source.source_id == page.source_id).first()
+    if not source:
+        print(f"  -> Error: No source root found for page {page.page_id}")
+        return False
+
     # 1. Try Notte
-    data = get_notte_content(source.url)
+    data = get_notte_content(page.page_url)
     method = "notte"
     
     # 2. Try Fallback
     if not data:
         print(f"  -> Falling back to BeautifulSoup...")
-        data = bs4_fallback(source.url)
+        data = bs4_fallback(page.page_url)
         method = "bs4_fallback"
         
     if not data or not data.get("raw_text"):
-        print(f"  -> Error: No content extracted for {source.url}")
+        print(f"  -> Error: No content extracted for {page.page_url}")
         return False
         
-    # 3. Save to JSON
+    # 3. Save to JSON (maintained for backward compatibility/raw storage)
     domain_folder = os.path.join(BASE_STORAGE_DIR, "pcos", source.source_type)
     os.makedirs(domain_folder, exist_ok=True)
     
-    filename = f"{source.source_id}_{source.domain}.json"
+    domain_label = source.base_url.replace("https://", "").replace("http://", "").split("/")[0]
+    filename = f"{page.page_id}_{domain_label}.json"
     file_path = os.path.join("pcos", source.source_type, filename)
     abs_path = os.path.join(BASE_STORAGE_DIR, file_path)
     
     full_data = {
-        "source_id": source.source_id,
-        "url": source.url,
-        "title": data.get("title", source.title),
-        "domain": source.domain,
+        "page_id": page.page_id,
+        "url": page.page_url,
+        "title": data.get("title", "Untitled"),
+        "domain": domain_label,
         "scraped_at": datetime.utcnow().isoformat(),
         "source_type": source.source_type,
-        "topic": source.topic,
-        "confidence_level": source.confidence_level,
         "raw_text": data.get("raw_text"),
         "extracted_sections": data.get("extracted_sections", {}),
         "metadata": {
             "scraper_method": method,
-            "discovery_method": source.discovery_method
+            "discovery_method": page.discovery_method
         }
     }
     
     with open(abs_path, 'w', encoding='utf-8') as f:
         json.dump(full_data, f, indent=2, ensure_ascii=False)
         
-    # 4. Update DB Registry
-    content_hash = hashlib.md5(data.get("raw_text").encode('utf-8')).hexdigest()
-    update_source(db, source.source_id, {
-        "title": full_data["title"],
-        "file_path": file_path,
-        "content_hash": content_hash,
-        "last_scraped_at": datetime.utcnow(),
-        "http_status": 200
-    })
+    # 4. Update DB via the new Save Page Content logic (Handles Hashing & Versioning)
+    save_page_content(
+        db, 
+        page.page_id, 
+        data.get("raw_text"), 
+        json_data=full_data["extracted_sections"]
+    )
     
-    # 5. Trigger Chunking - Refresh object to ensure file_path is loaded
-    db.commit()
-    db.refresh(source)
-    process_source_chunks(db, source)
+    # 5. Trigger Chunking - We pass the page object as 'source' for existing chunker compatibility
+    # The chunker logic expects an object with page_id/source_id and text content access.
+    process_source_chunks(db, page)
     
     return True
 
 def run_notte_ingestion(limit=500):
-    """Ingest up to `limit` sources from the registry that haven't been scraped yet."""
+    """Ingest up to `limit` source pages from the registry that haven't been scraped yet."""
     init_db()
     db = SessionLocal()
     
-    # Get active sources without a file_path (meaning they haven't been scraped)
-    sources = db.query(SourceRegistry).filter(
-        SourceRegistry.is_active == 1,
-        SourceRegistry.file_path == None
+    # Get active source pages without a content hash (meaning they haven't been successfully scraped/versioned)
+    pages = db.query(SourcePage).filter(
+        SourcePage.is_active == 1,
+        SourcePage.last_hash == None
     ).limit(limit).all()
     
-    print(f"Found {len(sources)} sources in registry to scrape.")
+    print(f"Found {len(pages)} source pages to scrape.")
     
     success_count = 0
-    for source in sources:
-        if scrape_and_store(db, source):
+    for page in pages:
+        if scrape_and_store(db, page):
             success_count += 1
             
     print(f"Ingestion complete. Successfully scraped {success_count} sources.")

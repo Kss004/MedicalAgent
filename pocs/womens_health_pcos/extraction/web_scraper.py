@@ -10,7 +10,8 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 
 from pocs.womens_health_pcos.database.session import SessionLocal, init_db
-from pocs.womens_health_pcos.database.models import SourceRegistry
+from pocs.womens_health_pcos.database.models import Source, SourcePage
+from pocs.womens_health_pcos.database.registry_db import save_page_content
 
 BASE_STORAGE_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
@@ -57,62 +58,57 @@ def run_extraction():
     ensure_directories()
     db = SessionLocal()
     
-    # Get unprocessed sources
-    pending_sources = db.query(SourceRegistry).filter(SourceRegistry.last_scraped_at == None, SourceRegistry.is_active == 1).all()
-    print(f"Found {len(pending_sources)} pending sources to scrape.")
+    # Get unprocessed source pages
+    pending_pages = db.query(SourcePage).filter(SourcePage.last_hash == None, SourcePage.is_active == 1).all()
+    print(f"Found {len(pending_pages)} pending pages to scrape.")
     
     success_count = 0
     fail_count = 0
     
-    for source in pending_sources:
-        print(f"Scraping [{source.source_type}]: {source.url}")
-        content_dict = scrape_url(source.url, source.source_type)
+    for page in pending_pages:
+        # Get Source Root for type info
+        source = db.query(Source).filter(Source.source_id == page.source_id).first()
+        stype = source.source_type if source else "article"
+        
+        print(f"Scraping [{stype}]: {page.page_url}")
+        content_dict = scrape_url(page.page_url, stype)
         
         if not content_dict.get("raw_text") and not "simulated" in str(content_dict):
             fail_count += 1
-            source.http_status = 404 # Placeholder for general fail
+            page.http_status = 404
             db.commit()
             continue
             
         raw_text = content_dict.get("raw_text", "")
-        content_hash = generate_hash(raw_text)
+        domain_label = page.page_url.replace("https://", "").replace("http://", "").split("/")[0]
         
-        file_name = f"{source.source_id}_{source.domain}.json".replace(" ", "_")
-        # map source type to valid sub-directory fallback
-        sub_dir = source.source_type + "s" if source.source_type in ["article", "guideline", "video"] else source.source_type 
+        file_name = f"{page.page_id}_{domain_label}.json".replace(" ", "_")
+        sub_dir = stype + "s" if stype in ["article", "guideline", "video"] else stype 
         if not os.path.exists(os.path.join(BASE_STORAGE_DIR, sub_dir)):
-            sub_dir = "articles" # Fallback mapping
+            sub_dir = "articles"
             
-        relative_path = os.path.join(sub_dir, file_name)
-        absolute_path = os.path.join(BASE_STORAGE_DIR, relative_path)
+        absolute_path = os.path.join(BASE_STORAGE_DIR, sub_dir, file_name)
         
         json_payload = {
-            "source_id": source.source_id,
-            "url": source.url,
-            "title": source.title,
-            "domain": source.domain,
+            "page_id": page.page_id,
+            "url": page.page_url,
+            "title": domain_label,
             "scraped_at": datetime.utcnow().isoformat(),
-            "source_type": source.source_type,
-            "topic": source.topic,
-            "confidence_level": source.confidence_level,
+            "source_type": stype,
             "raw_text": raw_text,
             "extracted_sections": content_dict.get("extracted_sections", {}),
-            "metadata": {"discovery_method": source.discovery_method}
+            "metadata": {"discovery_method": page.discovery_method}
         }
         
         try:
             with open(absolute_path, 'w', encoding='utf-8') as f:
                 json.dump(json_payload, f, indent=2, ensure_ascii=False)
                 
-            # Update DB Registry
-            source.last_scraped_at = datetime.utcnow()
-            source.content_hash = content_hash
-            source.file_path = relative_path
-            source.http_status = 200
-            db.commit()
+            # Update DB via hashing/snapshot logic
+            save_page_content(db, page.page_id, raw_text, json_data=content_dict.get("extracted_sections", {}))
             success_count += 1
         except Exception as e:
-            print(f"Error saving to disk for {source.source_id}: {e}")
+            print(f"Error saving to disk for page {page.page_id}: {e}")
             fail_count += 1
 
     print(f"Extraction complete. Scraped {success_count} sources. Failed {fail_count}.")

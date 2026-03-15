@@ -9,8 +9,11 @@ load_dotenv()
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 
 from pocs.womens_health_pcos.database.session import SessionLocal, init_db
-from pocs.womens_health_pcos.database.registry_db import create_source, get_source_by_url
-from pocs.womens_health_pcos.schema.models import SourceRegistryRecord
+from pocs.womens_health_pcos.database.registry_db import (
+    get_source_by_base_url, create_source_root, 
+    get_page_by_url, create_page
+)
+from pocs.womens_health_pcos.schema.models import SourceRecord, SourcePageRecord
 
 try:
     from tavily import TavilyClient
@@ -119,18 +122,28 @@ def run_discovery():
         ]
         found_count = 0
         for item in static_urls:
-            if not get_source_by_url(db, item[0]):
-                record = SourceRegistryRecord(
-                    url=item[0],
-                    title="Simulated Discovery URL",
-                    domain=item[2],
-                    topic=item[1],
-                    source_type=classify_source_type(item[0], item[2]),
-                    confidence_level=item[3],
-                    discovery_method="static_fallback",
+            url, topic, domain, trust = item
+            
+            # 1. Ensure Source Root exists
+            source_root = get_source_by_base_url(db, f"https://{domain}")
+            if not source_root:
+                source_root = create_source_root(db, SourceRecord(
+                    source_name=domain,
+                    base_url=f"https://{domain}",
+                    source_type=classify_source_type(url, domain),
+                    trust_level=trust,
                     is_active=True
-                )
-                create_source(db, record)
+                ))
+            
+            # 2. Ensure Page exists
+            if not get_page_by_url(db, url):
+                create_page(db, SourcePageRecord(
+                    source_id=source_root.source_id,
+                    page_url=url,
+                    discovery_method="static_fallback",
+                    crawl_depth=0,
+                    is_active=True
+                ))
                 found_count += 1
         print(f"Fallback complete. Added {found_count} simulated urls.")
         return
@@ -150,21 +163,29 @@ def run_discovery():
             for r in res.get("results", []):
                 domain = get_domain_from_url(r["url"])
                 
-                # Deduplicate
-                if get_source_by_url(db, r["url"]):
+                # Deduplicate Page
+                if get_page_by_url(db, r["url"]):
                     duplicate_count += 1
                 else:
-                    record = SourceRegistryRecord(
-                        url=r["url"],
-                        title=r["title"],
-                        domain=domain,
-                        topic=topic,
-                        source_type=classify_source_type(r["url"], domain),
-                        confidence_level=get_confidence_level(domain),
+                    # 1. Ensure Source Root exists
+                    source_root = get_source_by_base_url(db, f"https://{domain}")
+                    if not source_root:
+                        source_root = create_source_root(db, SourceRecord(
+                            source_name=domain,
+                            base_url=f"https://{domain}",
+                            source_type=classify_source_type(r["url"], domain),
+                            trust_level=get_confidence_level(domain),
+                            is_active=True
+                        ))
+                    
+                    # 2. Create Page
+                    create_page(db, SourcePageRecord(
+                        source_id=source_root.source_id,
+                        page_url=r["url"],
                         discovery_method="tavily",
+                        crawl_depth=0,
                         is_active=True
-                    )
-                    create_source(db, record)
+                    ))
                     found_count += 1
             
         except Exception as e:
@@ -175,20 +196,28 @@ def run_discovery():
             res_low = tvly.search(query=topic + " PCOS personal experience", max_results=5, include_domains=LOW_DOMAINS)
             for r in res_low.get("results", []):
                 domain = get_domain_from_url(r["url"])
-                if get_source_by_url(db, r["url"]):
+                if get_page_by_url(db, r["url"]):
                     duplicate_count += 1
                 else:
-                    record = SourceRegistryRecord(
-                        url=r["url"],
-                        title=r["title"],
-                        domain=domain,
-                        topic=topic,
-                        source_type=classify_source_type(r["url"], domain),
-                        confidence_level="LOW",
+                    # 1. Ensure Source Root exists
+                    source_root = get_source_by_base_url(db, f"https://{domain}")
+                    if not source_root:
+                        source_root = create_source_root(db, SourceRecord(
+                            source_name=domain,
+                            base_url=f"https://{domain}",
+                            source_type=classify_source_type(r["url"], domain),
+                            trust_level="LOW",
+                            is_active=True
+                        ))
+                    
+                    # 2. Create Page
+                    create_page(db, SourcePageRecord(
+                        source_id=source_root.source_id,
+                        page_url=r["url"],
                         discovery_method="tavily",
+                        crawl_depth=0,
                         is_active=True
-                    )
-                    create_source(db, record)
+                    ))
                     found_count += 1
         except Exception as e:
             pass

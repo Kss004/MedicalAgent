@@ -390,7 +390,7 @@ def retrieve_community_reports(query: str, limit: int = 3) -> list:
         sys.path.insert(0, pocs_path)
     
     from pocs.womens_health_pcos.database.session import SessionLocal
-    from pocs.womens_health_pcos.database.models import SourceRegistry, ChunkMetadata
+    from pocs.womens_health_pcos.database.models import Source, SourcePage, ChunkMetadata
     from sqlalchemy import or_
 
     db = SessionLocal()
@@ -399,38 +399,39 @@ def retrieve_community_reports(query: str, limit: int = 3) -> list:
         stop_words = {"experiences", "reddit", "community", "advice", "story", "stories", "what", "how", "are", "with", "for", "the", "some", "someone", "anyone", "else"}
         keywords = [kw.strip("?.,!") for kw in query.lower().split() if len(kw) > 3 and kw not in stop_words]
         
+        # Base query joining ChunkMetadata -> SourcePage -> Source
+        base_query = db.query(ChunkMetadata, SourcePage, Source).join(
+            SourcePage, ChunkMetadata.source_id == SourcePage.page_id
+        ).join(
+            Source, SourcePage.source_id == Source.source_id
+        ).filter(
+            Source.source_type == 'community',
+            SourcePage.is_active == 1
+        )
+
         if not keywords:
             # If no specific condition, just return recent community posts
-            results = db.query(ChunkMetadata, SourceRegistry).join(
-                SourceRegistry, ChunkMetadata.source_id == SourceRegistry.source_id
-            ).filter(
-                SourceRegistry.source_type == 'community'
-            ).limit(limit).all()
+            results = base_query.limit(limit).all()
         else:
             conditions = []
             for kw in keywords:
                 conditions.append(ChunkMetadata.chunk_text.ilike(f"%{kw}%"))
-                conditions.append(SourceRegistry.title.ilike(f"%{kw}%"))
+                conditions.append(Source.source_name.ilike(f"%{kw}%")) # Using source_name instead of title
                 
-            results = db.query(ChunkMetadata, SourceRegistry).join(
-                SourceRegistry, ChunkMetadata.source_id == SourceRegistry.source_id
-            ).filter(
-                SourceRegistry.source_type == 'community',
-                or_(*conditions)
-            ).limit(limit * 2).all() # Fetch extra in case of duplicates
+            results = base_query.filter(or_(*conditions)).limit(limit * 2).all() # Fetch extra in case of duplicates
         
         community_sources = []
         seen_urls = set()
-        for chunk, source in results:
-            if source.url in seen_urls:
+        for chunk, page, source in results:
+            if page.page_url in seen_urls:
                 continue
-            seen_urls.add(source.url)
+            seen_urls.add(page.page_url)
             
-            content = chunk.chunk_text.strip() if chunk.chunk_text else (source.title or "Community Experience")
+            content = chunk.chunk_text.strip() if chunk.chunk_text else "Community Experience"
             community_sources.append({
-                "title": source.title or "Community Experience (Reddit)",
-                "url": source.url,
-                "source_domain": source.domain,
+                "title": source.source_name or "Community Experience (Reddit)",
+                "url": page.page_url,
+                "source_domain": source.base_url.replace("https://", "").replace("http://", "").split("/")[0],
                 "content_type": "ANECDOTAL",
                 "content": content[:800] + "...", # truncate
                 "confidence_score": 30, # Low confidence for reddit
@@ -476,7 +477,7 @@ def search_trusted_sources(query: str) -> dict:
         # === Layer 1: Local Knowledge Base (Chunk-based search) ===
         print("[Layer 1: Knowledge Base Search]")
         from pocs.womens_health_pcos.database.session import SessionLocal
-        from pocs.womens_health_pcos.database.models import SourceRegistry, ChunkMetadata
+        from pocs.womens_health_pcos.database.models import Source, SourcePage, ChunkMetadata
         from sqlalchemy import or_
 
         db = SessionLocal()
@@ -491,35 +492,35 @@ def search_trusted_sources(query: str) -> dict:
                 for kw in search_keywords:
                     query_filter.append(ChunkMetadata.chunk_text.ilike(f"%{kw}%"))
                 
-                # Search chunks in the main registry
-                results = db.query(ChunkMetadata, SourceRegistry).join(
-                    SourceRegistry, ChunkMetadata.source_id == SourceRegistry.source_id
+                # Search chunks in the new 3-layer structure
+                # We join ChunkMetadata -> SourcePage -> Source
+                results = db.query(ChunkMetadata, SourcePage, Source).join(
+                    SourcePage, ChunkMetadata.source_id == SourcePage.page_id
+                ).join(
+                    Source, SourcePage.source_id == Source.source_id
                 ).filter(
-                    SourceRegistry.is_active == 1,
+                    SourcePage.is_active == 1,
                     or_(*query_filter)
-                ).order_by(SourceRegistry.confidence_level.desc()).limit(15).all()
+                ).order_by(Source.trust_level.desc()).limit(15).all()
                 
                 seen_urls = set()
-                for chunk, source in results:
-                    if source.url in seen_urls:
-                        # Append content if already seen? Or just use first match.
-                        # For "all info", we could aggregate chunks, but for now we'll pick distinct sources.
+                for chunk, page, source in results:
+                    if page.page_url in seen_urls:
                         continue
-                    seen_urls.add(source.url)
+                    seen_urls.add(page.page_url)
                     
                     source_type = source.source_type.upper()
                     # Normalize community/reddit sources to ANECDOTAL for the mixer
                     content_type = "ANECDOTAL" if source_type == 'COMMUNITY' else source_type
                     
                     local_results.append({
-                        "title": source.title or "Medical Resource",
-                        "url": source.url,
-                        "source_domain": source.domain,
+                        "title": source.source_name or "Medical Resource",
+                        "url": page.page_url,
+                        "source_domain": source.base_url.replace("https://", "").replace("http://", "").split("/")[0],
                         "content_type": content_type,
                         "content": chunk.chunk_text,
-                        "confidence_score": 90 if source.confidence_level == "HIGH" else 70,
-                        "confidence_level": source.confidence_level,
-                        "source_label": _get_source_label(source.domain)
+                        "confidence_score": 90 if source.trust_level == "HIGH" else 70,
+                        "source_label": source.source_name
                     })
         except Exception as e:
             print(f"Error searching local DB: {e}")
