@@ -9,6 +9,8 @@ import base64
 
 from medical_assistant import ask_health_assistant, analyze_prescription
 from pocs.womens_health_pcos.api.questionnaire_api import router as questionnaire_router
+from pocs.womens_health_pcos.scheduler.scheduler_config import start_scheduler, shutdown_scheduler, scheduler
+from pocs.womens_health_pcos.scheduler.jobs import refresh_stale_pages
 
 app = FastAPI(title="Medical Assistant API")
 
@@ -22,6 +24,25 @@ app.add_middleware(
 )
 
 app.include_router(questionnaire_router)
+
+@app.on_event("startup")
+def startup_event():
+    start_scheduler()
+    # Schedule the refresh job daily
+    # Check if job already exists to avoid duplicates on reload
+    if not any(job.id == 'daily_refresh' for job in scheduler.get_jobs()):
+        scheduler.add_job(
+            refresh_stale_pages, 
+            'interval', 
+            days=1, 
+            id='daily_refresh', 
+            replace_existing=True
+        )
+        print("[Scheduler] Scheduled daily_refresh job.")
+
+@app.on_event("shutdown")
+def shutdown_event():
+    shutdown_scheduler()
 
 class ChatRequest(BaseModel):
     query: str
@@ -50,6 +71,17 @@ async def chat(request: ChatRequest):
 @app.get("/api/health")
 async def health_check():
     return {"status": "healthy", "version": "1.0.0"}
+
+@app.get("/api/scheduler/jobs")
+async def get_scheduled_jobs():
+    jobs = []
+    for job in scheduler.get_jobs():
+        jobs.append({
+            "id": job.id,
+            "next_run_time": str(job.next_run_time),
+            "trigger": str(job.trigger)
+        })
+    return {"jobs": jobs, "running": scheduler.running}
 
 ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp"}
 MAX_SIZE = 10 * 1024 * 1024  # 10MB

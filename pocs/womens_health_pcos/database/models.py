@@ -123,27 +123,51 @@ class CommunityReport(Base):
     reported_outcome = Column(String, nullable=True)
     sentiment = Column(String, nullable=True)
 
-class SourceRegistry(Base):
-    """Registry for all discovered sources to be ingested and refreshed."""
-    __tablename__ = "source_registry"
-    
+class Source(Base):
+    """Website/Domain level root source."""
+    __tablename__ = "sources"
+
     source_id = Column(Integer, primary_key=True, index=True)
-    url = Column(String, unique=True, nullable=False, index=True)
-    canonical_url = Column(String, nullable=True)
-    title = Column(String, nullable=True)
-    domain = Column(String, nullable=False, index=True)
-    topic = Column(String, nullable=True)
-    source_type = Column(String, nullable=False)
-    confidence_level = Column(String, nullable=False)
-    discovery_method = Column(String, nullable=True)
-    is_active = Column(Integer, default=1) # Boolean equivalent
-    http_status = Column(Integer, nullable=True)
-    content_hash = Column(String, nullable=True)
-    last_scraped_at = Column(DateTime(timezone=True), nullable=True)
-    last_checked_at = Column(DateTime(timezone=True), nullable=True)
-    file_path = Column(String, nullable=True)
+    source_name = Column(String, nullable=False)
+    base_url = Column(String, unique=True, nullable=False, index=True)
+    source_type = Column(String, nullable=False) # guideline, research_paper, article, community, video
+    trust_level = Column(String, default="MEDIUM") # HIGH, MEDIUM, LOW
+    crawl_frequency = Column(String, default="weekly") # daily, weekly, monthly
+    is_active = Column(Integer, default=1)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+class SourcePage(Base):
+    """Actual discovered URLs belonging to a Source."""
+    __tablename__ = "source_pages"
+
+    page_id = Column(Integer, primary_key=True, index=True)
+    source_id = Column(Integer, nullable=False, index=True)
+    page_url = Column(String, unique=True, nullable=False, index=True)
+    parent_page_id = Column(Integer, nullable=True)
+    crawl_depth = Column(Integer, default=0)
+    discovery_method = Column(String, nullable=True)
+    page_status = Column(String, default="active") # active, deprecated, failed
+    last_hash = Column(String, nullable=True)
+    last_crawled = Column(DateTime(timezone=True), nullable=True)
+    last_checked = Column(DateTime(timezone=True), nullable=True)
+    http_status = Column(Integer, nullable=True)
+    is_active = Column(Integer, default=1)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+
+class PageContent(Base):
+    """Snapshots of extracted content for individual pages."""
+    __tablename__ = "page_content"
+
+    content_id = Column(Integer, primary_key=True, index=True)
+    page_id = Column(Integer, nullable=False, index=True)
+    content_text = Column(Text, nullable=False)
+    content_json = Column(Text, nullable=True) # JSON stored as text
+    content_hash = Column(String, nullable=False)
+    version_number = Column(Integer, default=1)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+
 
 class ChunkMetadata(Base):
     """Metadata for textual chunks to be vectorized."""

@@ -2,6 +2,10 @@ langchain
 langchain-openai
 langchain-tavily
 langchain-ollama
+langchain-community
+openai
+fastapi
+uvicorn
 python-dotenv
 python-multipart
 trafilatura
@@ -12,3 +16,4 @@ sqlalchemy
 psycopg2-binary
 biopython
 praw
+apscheduler
