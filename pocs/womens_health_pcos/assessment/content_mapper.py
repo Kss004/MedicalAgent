@@ -83,11 +83,10 @@ def evaluate_pcos_patterns(user_data_dict: dict) -> dict:
     for query in queries[:2]:
         print(f"[Content Mapper] Fetching verified knowledge for: {query}")
         search_results = search_trusted_sources(query)
-        if search_results and "context" in search_results:
+        if search_results and "source_urls" in search_results:
             educational_content.append({
                 "theme": query,
                 "verified_sources": search_results["source_urls"],
-                "content": _clean_content(search_results["context"]),
             })
 
     # 6. Build display text
