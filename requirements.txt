@@ -10,7 +10,8 @@ yt-dlp
 youtube-transcript-api
 sqlalchemy
 psycopg2-binary
+pgvector
+openai
 biopython
 praw
 apscheduler
-sqlalchemy-apscheduler

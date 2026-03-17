@@ -1,8 +1,120 @@
-# Sources configuration
+# Sources configuration for PCOS Knowledge Pipeline
 sources:
+  # Research databases
   pubmed:
     enabled: true
     priority: 1
+    source_type: research_paper
+    trust_level: MEDIUM
+    crawl_frequency: weekly
+    base_url: https://pubmed.ncbi.nlm.nih.gov
+
+  # Government / International health organizations
+  who:
+    enabled: true
+    priority: 2
+    source_type: guideline
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://www.who.int
+
   cdc:
     enabled: true
     priority: 2
+    source_type: guideline
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://www.cdc.gov
+
+  nih:
+    enabled: true
+    priority: 2
+    source_type: article
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://www.nih.gov
+
+  nhs:
+    enabled: true
+    priority: 3
+    source_type: article
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://www.nhs.uk
+
+  # Clinical organizations
+  mayo_clinic:
+    enabled: true
+    priority: 3
+    source_type: article
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://www.mayoclinic.org
+
+  cleveland_clinic:
+    enabled: true
+    priority: 3
+    source_type: article
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://my.clevelandclinic.org
+
+  endocrine_society:
+    enabled: true
+    priority: 4
+    source_type: guideline
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://www.endocrine.org
+
+  eshre:
+    enabled: true
+    priority: 4
+    source_type: guideline
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://www.eshre.eu
+
+  # Academic
+  monash:
+    enabled: true
+    priority: 5
+    source_type: guideline
+    trust_level: MEDIUM
+    crawl_frequency: monthly
+    base_url: https://www.monash.edu
+
+  # India-specific
+  icmr:
+    enabled: true
+    priority: 5
+    source_type: guideline
+    trust_level: HIGH
+    crawl_frequency: monthly
+    base_url: https://www.icmr.gov.in
+
+  # Community / Anecdotal
+  reddit_pcos:
+    enabled: true
+    priority: 10
+    source_type: community
+    trust_level: LOW
+    crawl_frequency: weekly
+    base_url: https://www.reddit.com/r/PCOS
+
+  reddit_pcosloseit:
+    enabled: true
+    priority: 10
+    source_type: community
+    trust_level: LOW
+    crawl_frequency: weekly
+    base_url: https://www.reddit.com/r/PCOSloseit
+
+  # Video
+  youtube:
+    enabled: true
+    priority: 8
+    source_type: video
+    trust_level: LOW
+    crawl_frequency: weekly
+    base_url: https://www.youtube.com

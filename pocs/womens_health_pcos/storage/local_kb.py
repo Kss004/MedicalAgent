@@ -1,8 +1,9 @@
 """
 Local Knowledge Base for the Verified Medical Retrieval Pipeline.
 
-SQLite-backed storage for scraped and cached trusted medical content.
-Acts as the primary retrieval layer before Tavily fallback.
+DEPRECATED: Primary retrieval has moved to PostgreSQL + pgvector (see retrieval/vector_search.py).
+This SQLite store is retained only for auto-caching Tavily results during the transition.
+New queries should use vector_search.vector_search() instead of local_kb.search().
 """
 
 import sqlite3

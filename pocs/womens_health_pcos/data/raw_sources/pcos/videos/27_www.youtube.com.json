@@ -1,0 +1,12 @@
+{
+  "page_id": 27,
+  "url": "https://www.youtube.com/watch?v=yi-c8n7qDLc",
+  "title": "www.youtube.com",
+  "scraped_at": "2026-03-17T04:06:11.862624",
+  "source_type": "video",
+  "raw_text": "Simulated transcript extraction for https://www.youtube.com/watch?v=yi-c8n7qDLc.",
+  "extracted_sections": {},
+  "metadata": {
+    "discovery_method": "tavily"
+  }
+}

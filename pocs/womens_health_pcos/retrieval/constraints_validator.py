@@ -9,9 +9,14 @@ MIN_ARTICLE_LENGTH = 80   # Tavily snippets are typically 150-400 chars
 MIN_VIDEO_METADATA_LENGTH = 30
 
 
-def validate(record: dict) -> dict:
+def validate(record: dict, allow_anecdotal: bool = True) -> dict:
     """
     Validate a single record against constraints.
+
+    Args:
+        record: The source record to validate.
+        allow_anecdotal: When True, LOW confidence sources pass through
+            but get tagged with ``is_anecdotal: True`` instead of being rejected.
 
     Returns:
         {"valid": bool, "reason": str}
@@ -25,9 +30,12 @@ def validate(record: dict) -> dict:
     if not url or not url.startswith("http"):
         return {"valid": False, "reason": "Missing or malformed URL"}
 
-    # Rule 2: Confidence must be HIGH or MEDIUM (not LOW)
+    # Rule 2: Confidence must be HIGH or MEDIUM — unless anecdotal is allowed
     if confidence_level not in ("HIGH", "MEDIUM"):
-        return {"valid": False, "reason": f"Rejected confidence level: {confidence_level}"}
+        if allow_anecdotal:
+            record["is_anecdotal"] = True
+        else:
+            return {"valid": False, "reason": f"Rejected confidence level: {confidence_level}"}
 
     # Rule 3: Content must not be empty
     if not content.strip():
@@ -47,9 +55,13 @@ def validate(record: dict) -> dict:
     return {"valid": True, "reason": "Passed all constraints"}
 
 
-def validate_batch(records: list[dict]) -> tuple[list[dict], list[dict]]:
+def validate_batch(records: list[dict], allow_anecdotal: bool = True) -> tuple[list[dict], list[dict]]:
     """
     Validate a batch of records. Rejects duplicates and invalid records.
+
+    Args:
+        records: List of source records.
+        allow_anecdotal: Passed through to ``validate()``.
 
     Returns:
         (accepted, rejected) — with rejection reasons attached
@@ -68,7 +80,7 @@ def validate_batch(records: list[dict]) -> tuple[list[dict], list[dict]]:
             continue
         seen_urls.add(url)
 
-        result = validate(r)
+        result = validate(r, allow_anecdotal=allow_anecdotal)
         if result["valid"]:
             accepted.append(r)
         else:

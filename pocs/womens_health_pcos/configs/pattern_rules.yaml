@@ -1,4 +1,76 @@
-# Pattern matching rules for symptoms
+# Pattern matching rules for PCOS symptom detection
+# Used by the assessment pattern engine to identify physiological patterns
+
 patterns:
-  irregular_periods: ["irregular", "missed", "delayed"]
-  hirsutism: ["excessive hair", "facial hair"]
+  # Symptom keywords for pattern detection
+  irregular_periods:
+    keywords: ["irregular", "missed", "delayed", "absent", "skipped", "late"]
+    weight: 2
+
+  hirsutism:
+    keywords: ["excessive hair", "facial hair", "body hair", "unwanted hair"]
+    weight: 1
+
+  acne:
+    keywords: ["acne", "breakouts", "cystic acne", "hormonal acne"]
+    weight: 1
+
+  hair_loss:
+    keywords: ["hair loss", "thinning hair", "alopecia", "hair fall", "shedding"]
+    weight: 1
+
+  weight_gain:
+    keywords: ["weight gain", "obesity", "overweight", "difficulty losing weight"]
+    weight: 1
+
+  fatigue:
+    keywords: ["fatigue", "exhausted", "low energy", "tired", "lethargy"]
+    weight: 1
+
+  insulin_resistance:
+    keywords: ["insulin resistance", "blood sugar", "glucose", "diabetes risk"]
+    weight: 2
+
+# Pattern cluster definitions
+clusters:
+  hormonal_imbalance:
+    description: "Androgen excess combined with cycle irregularities"
+    requires:
+      any_of: ["acne", "hirsutism", "hair_loss"]
+      and: ["irregular_periods"]
+    severity: HIGH
+
+  insulin_resistance_pattern:
+    description: "Metabolic symptoms with diabetes risk factors"
+    requires:
+      any_of: ["weight_gain", "fatigue"]
+      and_any_of: ["insulin_resistance", "high_bmi"]
+    severity: HIGH
+
+  reproductive_irregularity:
+    description: "Cycle disruption without clear hyperandrogenism"
+    requires:
+      any_of: ["irregular_periods"]
+      without: ["acne", "hirsutism", "hair_loss"]
+    severity: MEDIUM
+
+  metabolic_risk:
+    description: "Elevated BMI indicating metabolic concerns"
+    requires:
+      bmi_above: 30.0
+    severity: MEDIUM
+
+# Risk score thresholds
+risk_thresholds:
+  LOW:
+    min: 0
+    max: 2
+    label: "Low awareness"
+  MODERATE:
+    min: 3
+    max: 5
+    label: "Monitoring recommended"
+  HIGH:
+    min: 6
+    max: 999
+    label: "Pattern awareness — consult healthcare professional"

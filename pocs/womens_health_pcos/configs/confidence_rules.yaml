@@ -1,5 +1,53 @@
-# Confidence scoring rules
+# Confidence scoring rules for PCOS Knowledge Pipeline
+#
+# Each source type gets a base confidence score.
+# Scores can be boosted or penalized by domain trust level.
+
 rules:
+  # Source type base scores (0.0 - 1.0)
   peer_reviewed: 0.9
   clinical_guideline: 1.0
+  government_health: 0.95
+  academic_institution: 0.8
+  clinical_organization: 0.85
   community_anecdote: 0.3
+  video_verified_channel: 0.75
+  video_unverified: 0.5
+
+# Domain-level confidence overrides (integer scores 0-100)
+domain_scores:
+  HIGH:
+    - who.int
+    - cdc.gov
+    - nih.gov
+    - nhs.uk
+    - mayoclinic.org
+    - clevelandclinic.org
+    - endocrine.org
+    - eshre.eu
+    - icmr.gov.in
+  MEDIUM:
+    - pubmed.ncbi.nlm.nih.gov
+    - ncbi.nlm.nih.gov
+    - monash.edu
+  LOW:
+    - reddit.com
+    - quora.com
+    - youtube.com
+
+# Score mappings
+score_map:
+  HIGH: 95
+  MEDIUM: 75
+  LOW: 30
+
+# Verified YouTube channels that get boosted confidence
+verified_video_channels:
+  - Mayo Clinic
+  - Cleveland Clinic
+  - Khan Academy
+  - Osmosis
+  - TED-Ed
+  - WHO
+  - CDC
+  - NHS

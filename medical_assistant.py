@@ -474,58 +474,15 @@ def search_trusted_sources(query: str) -> dict:
         print(f"\n[Pipeline] Query: {query}")
         print(f"[Pipeline] Model: {_active_model}")
 
-        # === Layer 1: Local Knowledge Base (Chunk-based search) ===
+        # === Layer 1: Local Knowledge Base (Vector / Keyword search) ===
         print("[Layer 1: Knowledge Base Search]")
-        from pocs.womens_health_pcos.database.session import SessionLocal
-        from pocs.womens_health_pcos.database.models import Source, SourcePage, ChunkMetadata
-        from sqlalchemy import or_
+        from pocs.womens_health_pcos.retrieval.vector_search import vector_search as vs_search
 
-        db = SessionLocal()
         local_results = []
         try:
-            # Filter out stop words for search
-            stop_words = {"what", "is", "for", "the", "a", "an", "and", "or", "to", "of", "in"}
-            search_keywords = [kw.strip("?.,!") for kw in query.lower().split() if len(kw) > 3 and kw not in stop_words]
-            
-            if search_keywords:
-                query_filter = []
-                for kw in search_keywords:
-                    query_filter.append(ChunkMetadata.chunk_text.ilike(f"%{kw}%"))
-                
-                # Search chunks in the new 3-layer structure
-                # We join ChunkMetadata -> SourcePage -> Source
-                results = db.query(ChunkMetadata, SourcePage, Source).join(
-                    SourcePage, ChunkMetadata.source_id == SourcePage.page_id
-                ).join(
-                    Source, SourcePage.source_id == Source.source_id
-                ).filter(
-                    SourcePage.is_active == 1,
-                    or_(*query_filter)
-                ).order_by(Source.trust_level.desc()).limit(15).all()
-                
-                seen_urls = set()
-                for chunk, page, source in results:
-                    if page.page_url in seen_urls:
-                        continue
-                    seen_urls.add(page.page_url)
-                    
-                    source_type = source.source_type.upper()
-                    # Normalize community/reddit sources to ANECDOTAL for the mixer
-                    content_type = "ANECDOTAL" if source_type == 'COMMUNITY' else source_type
-                    
-                    local_results.append({
-                        "title": source.source_name or "Medical Resource",
-                        "url": page.page_url,
-                        "source_domain": source.base_url.replace("https://", "").replace("http://", "").split("/")[0],
-                        "content_type": content_type,
-                        "content": chunk.chunk_text,
-                        "confidence_score": 90 if source.trust_level == "HIGH" else 70,
-                        "source_label": source.source_name
-                    })
+            local_results = vs_search(query, limit=15)
         except Exception as e:
             print(f"Error searching local DB: {e}")
-        finally:
-            db.close()
 
         print(f"  Found {len(local_results)} local source chunks.")
 

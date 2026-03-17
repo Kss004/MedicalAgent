@@ -16,42 +16,47 @@ def calculate_risk_score(user_data: UserQuestionnaire) -> dict:
     - 6+: HIGH (pattern awareness, consult doctor)
     """
     
-    score = 0
+    symptom_score = 0
+    lifestyle_score = 0
+    family_history_score = 0
+    age_factor = 0
     factors = []
-    
+
     # Symptom Score
     if user_data.cycle_regularity in ['irregular', 'absent']:
-        score += 2
+        symptom_score += 2
         factors.append("Irregular or absent menstrual cycles")
-        
+
     major_symptoms = ["hirsutism", "acne", "hair_loss", "weight_gain"]
     matched_symptoms = [s for s in user_data.symptoms if s.lower() in major_symptoms]
     if matched_symptoms:
-        score += len(matched_symptoms)
+        symptom_score += len(matched_symptoms)
         factors.append(f"Physical symptoms ({', '.join(matched_symptoms)})")
 
     # Lifestyle Score
     if user_data.energy_levels in ['low', 'exhausted']:
-        score += 1
+        lifestyle_score += 1
         factors.append("Chronic low energy/fatigue")
-        
+
     bmi = user_data.bmi
     if bmi and bmi >= 25.0:
-        score += 1
+        lifestyle_score += 1
         factors.append(f"Elevated BMI ({bmi})")
-        
+
     # Family History Score
     if user_data.family_history_pcos:
-        score += 2
+        family_history_score += 2
         factors.append("Family history of PCOS")
     if user_data.family_history_diabetes:
-        score += 1
+        family_history_score += 1
         factors.append("Family history of Type 2 Diabetes")
-        
+
     # Age Factor
     if 15 <= user_data.age <= 30:
-        score += 1
-        
+        age_factor = 1
+
+    score = symptom_score + lifestyle_score + family_history_score + age_factor
+
     # Determine Category
     if score >= 6:
         category = "HIGH"
@@ -65,6 +70,12 @@ def calculate_risk_score(user_data: UserQuestionnaire) -> dict:
 
     return {
         "total_score": score,
+        "score_breakdown": {
+            "symptom_score": symptom_score,
+            "lifestyle_score": lifestyle_score,
+            "family_history_score": family_history_score,
+            "age_factor": age_factor,
+        },
         "category": category,
         "contributing_factors": factors,
         "recommendation": recommendation,
