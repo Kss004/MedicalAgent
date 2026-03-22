@@ -1,0 +1,1533 @@
+[
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is a condition where cysts (small sacs of fluid) develop on the ovaries. It can cause irregular menstruation and is a common cause of infertility, affecting as many as 5 million women. PCOS is also a lifelong condition that can have other impacts on health. [Source: Diabetes and Polycystic Ovary Syndrome (PCOS) - CDC] Please consult a healthcare provider for personalized advice.",
+    "source_id": 165,
+    "source_url": "https://www.cdc.gov/diabetes/risk-factors/pcos-polycystic-ovary-syndrome.html",
+    "source_title": "Diabetes and Polycystic Ovary Syndrome (PCOS) - CDC",
+    "source_type": "public_health",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is an endocrine disorder characterized primarily by hyperandrogenism, ovulatory dysfunction, and the growth of cysts in the ovaries. Insulin resistance is also a key component of this disorder, affecting about 70% of women with PCOS, which can lead to hyperinsulinemia and increase the risk of type 2 diabetes mellitus among other comorbidities such as infertility and cardiovascular disease. [Source: PCOS Research Overview | DiscoverWHR (NIH)] Please consult a healthcare provider for personalized advice.",
+    "source_id": 179,
+    "source_url": "https://discoverwhr.nih.gov/research/pcos/",
+    "source_title": "PCOS Research Overview | DiscoverWHR (NIH)",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a hormonal imbalance that occurs when your ovaries create excess hormones, specifically androgens. This can lead to irregular menstrual cycles, missed periods, unpredictable ovulation, and symptoms like excess hair growth and acne. Despite the name 'polycystic,' you don't need to have cysts on your ovaries to have PCOS, and the cysts themselves are not dangerous or painful. [Source: PCOS (Polycystic Ovary Syndrome): Symptoms & Treatment] Please consult a healthcare provider for personalized advice.",
+    "source_id": 180,
+    "source_url": "https://my.clevelandclinic.org/health/diseases/8316-polycystic-ovary-syndrome-pcos",
+    "source_title": "PCOS (Polycystic Ovary Syndrome): Symptoms & Treatment",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is one of the most common endocrine disorders, affecting 5%-10% of women of reproductive age. It is defined by at least two of the following abnormalities: oligo- and/or anovulation, clinical and/or biological hyperandrogenism, and polycystic ovaries [Source: Markers of insulin resistance in Polycystic ovary syndrome women]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 182,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8984569/",
+    "source_title": "Markers of insulin resistance in Polycystic ovary syndrome women",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the primary cause of insulin resistance in women with PCOS?",
+    "answer": "Insulin resistance in women with PCOS is due to a postbinding defect in signaling that persists in cultured skin fibroblasts and is associated with constitutive serine phosphorylation of the insulin receptor (IR) [Source: Insulin resistance in the skeletal muscle of women with PCOS ...]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 183,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/15613682/",
+    "source_title": "Insulin resistance in the skeletal muscle of women with PCOS ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What are the common symptoms associated with PCOS?",
+    "answer": "Polycystic ovarian syndrome (PCOS) commonly exhibits hyperandrogenism, ovulatory dysfunction, and is associated with obesity, insulin resistance, and subfertility [Source: All Women With PCOS Should Be Treated For Insulin Resistance]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 184,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3277302/",
+    "source_title": "All Women With PCOS Should Be Treated For Insulin Resistance",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What symptoms did the person experience before making lifestyle changes?",
+    "answer": "The person experienced no energy, sugar crashes, hirsutism, irregular periods, headaches, facial and chest breakouts, constant sugar cravings, anxiety, and was overweight. Despite eating in a calorie deficit of around 1000-1200 calories a day, they could not lose weight and felt terrible after eating.",
+    "source_id": 185,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/10pcuwe/success_pcos_and_insulin_resistance_story/",
+    "source_title": "Success PCOS and insulin resistance story - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What dietary changes helped the author reverse their insulin resistance?",
+    "answer": "The author worked with a registered dietitian who recommended a 2/1 ratio of carbs to protein, meaning for every 2 grams of carbs, they had to eat 1 gram of protein. This approach allowed them to enjoy carbs while preventing blood sugar spikes. Additionally, the dietitian increased their daily calorie intake from 1200 to 1800 calories, which helped the author make sustainable changes to their diet and ultimately reverse their insulin resistance. [Source: I've officially reversed my insulin resistance with diet only] Please consult a healthcare provider for personalized advice.",
+    "source_id": 186,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1b87eda/ive_officially_reversed_my_insulin_resistance/",
+    "source_title": "I've officially reversed my insulin resistance with diet only : r/PCOS",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is a condition characterized by hormonal imbalance and can affect a woman's menstrual cycle, fertility, and overall health. It is associated with various symptoms, including irregular menstrual cycles, but the article specifically notes that self-reported PCOS did not show a significant association with invasive ovarian cancer risk.",
+    "source_id": 187,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5877463/",
+    "source_title": "Polycystic ovary syndrome, oligomenorrhea, and risk of ovarian ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is PCOS?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is the most common endocrine-metabolic disorder in women of reproductive age.",
+    "source_id": 189,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/40120958",
+    "source_title": "Women with polycystic ovary syndrome (PCOS) - PubMed",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the primary hypothesis regarding the cause of Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "PCOS is hypothesized to result from functional ovarian hyperandrogenism (FOH) due to dysregulation of androgen secretion, with studies supporting this idea since the initial hypothesis proposed between 1989 and 1995. Two-thirds of PCOS cases exhibit typical FOH, characterized by hyperresponsiveness to gonadotropin stimulation",
+    "source": "The Pathogenesis of Polycystic Ovary Syndrome (PCOS) - PMC.",
+    "source_id": 190,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5045492/",
+    "source_title": "The Pathogenesis of Polycystic Ovary Syndrome (PCOS) - PMC",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is a common endocrine disorder characterized by chronic anovulation, clinical and/or biochemical hyperandrogenism, and/or polycystic ovaries. Hyperandrogenism is considered the main characteristic of PCOS, often manifested by symptoms such as acne, hirsutism, or frontal alopecia. [Source: Insulin and hyperandrogenism in women with polycystic ovary ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 191,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3846536/",
+    "source_title": "Insulin and hyperandrogenism in women with polycystic ovary ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is defined by a clinical triad of anovulation, insulin resistance, and androgen excess. It has an estimated prevalence of 5%–10% in women of reproductive age.",
+    "source_id": 192,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3955250/",
+    "source_title": "Hyperandrogenemia Predicts Metabolic Phenotype in Polycystic ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What should I do if I have hyperandrogenism but no PCOS diagnosis?",
+    "answer": "If you have hyperandrogenism but no PCOS diagnosis, it is important to follow up with your healthcare provider for further evaluation. You may want to advocate for yourself by discussing your concerns with your doctor and expressing the need for more personalized guidance, especially since you find general advice like 'just eat healthy and exercise' to be unhelpful. It can also be beneficial to stay informed about your condition and ask about potential referrals to specialists, such as an endocrinologist, if needed. Please consult a healthcare provider for personalized advice.",
+    "source_id": 193,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1gox1c8/hyperandrogenism_but_no_pcos_lost_and_confused/",
+    "source_title": "Hyperandrogenism but no PCOS- lost and confused. Any guidance ...",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Can someone with PCOS who doesn't have high levels of masculine traits be considered intersex?",
+    "answer": "The article discusses the confusion around PCOS and intersex traits, but it does not provide a definitive answer to whether someone with PCOS without high masculine traits is considered intersex. It notes that there are varying opinions and experiences regarding this topic, particularly focusing on hyperandrogenic PCOS, which may not apply to everyone with PCOS. It emphasizes the complexity of these terms and conditions. [Source: Question about PCOS and being intersex...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 194,
+    "source_url": "https://www.reddit.com/r/intersex/comments/1cvhkw6/question_about_pcos_and_being_intersex/",
+    "source_title": "Question about PCOS and being intersex... - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is hirsutism?",
+    "answer": "Hirsutism is excess hair growth on the body or face. For women, the hair may grow in areas where men often have a lot of hair but women often don’t, such as the upper lip, chin, chest, and back. It’s caused by an excess of male hormones called androgens. All women naturally produce small amounts of androgens, but high levels can lead to hirsutism. [Source: Hirsutism in Women (Excess Body Hair Growth)] Please consult a healthcare provider for personalized advice.",
+    "source_id": 195,
+    "source_url": "https://www.cedars-sinai.org/health-library/diseases-and-conditions/h/hirsutism-in-women-excess-body-hair-growth.html",
+    "source_title": "Hirsutism in Women (Excess Body Hair Growth)",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What have some people tried to manage their hirsutism?",
+    "answer": "Some people have tried spearmint tea and spironolactone 50mg to manage their hirsutism, although individual results may vary and some may not find these methods effective [Source: What truly helped your hirsutism? : r/PCOS - Reddit]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 196,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1gxh7mo/what_truly_helped_your_hirsutism/",
+    "source_title": "What truly helped your hirsutism? : r/PCOS - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What options are available for managing hirsutism?",
+    "answer": "The article does not specify any particular options for managing hirsutism, but it reflects the frustration of individuals looking for solutions. It mentions a query about whether 'spiel' has worked for anyone, indicating that people are seeking shared experiences and solutions from others facing similar challenges. [Source: What has worked if you have hirsutism?] Please consult a healthcare provider for personalized advice.",
+    "source_id": 197,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/11ueur5/what_has_worked_if_you_have_hirsutism/",
+    "source_title": "What has worked if you have hirsutism? : r/PCOS - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a hormonal disorder that affects people with ovaries, leading to various symptoms and health issues. [Source: Polycystic Ovary Syndrome (PCOS) - ACOG] Please consult a healthcare provider for personalized advice.",
+    "source_id": 198,
+    "source_url": "https://www.acog.org/womens-health/faqs/polycystic-ovary-syndrome-pcos",
+    "source_title": "Polycystic Ovary Syndrome (PCOS) - ACOG",
+    "source_type": "guideline",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What was the outcome of the SHG procedure mentioned in the article?",
+    "answer": "The SHG went well, with no pain, and showed a clear uterus and tubes. [Source: RE Visit: I have PCOS] Please consult a healthcare provider for personalized advice.",
+    "source_id": 199,
+    "source_url": "https://www.reddit.com/r/infertility/comments/5g09s0/re_visit_i_have_pcos/",
+    "source_title": "RE Visit: I have PCOS : r/infertility - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What concerns does the person have about PCOS and fertility?",
+    "answer": "The person is worried that their PCOS may cause infertility, especially since they have engaged in unprotected sex without becoming pregnant. They express concern about not being able to have children, which affects their relationship with their boyfriend who already has a child [Source: I'm scared my PCOS has made me infertile.]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 200,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/7vffmj/im_scared_my_pcos_has_made_me_infertile/",
+    "source_title": "I'm scared my PCOS has made me infertile. - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What symptoms of PCOS does the person mention experiencing?",
+    "answer": "The person mainly experiences issues with weight gain and is trying to lose weight. They also mention that their skin stays decently clear as long as they take care of their face, and any hair loss they experience is minimal due to having long thick hair [Source: I'm scared my PCOS has made me infertile.]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 200,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/7vffmj/im_scared_my_pcos_has_made_me_infertile/",
+    "source_title": "I'm scared my PCOS has made me infertile. - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is PCOS and how is it related to anovulation?",
+    "answer": "Polycystic ovary syndrome (PCOS) is the most common cause of anovulation, which is the lack or absence of ovulation. Anovulation is a common cause of infertility, responsible for nearly 30% of female infertility problems. [Source: PCOS, Anovulation and Infertility] Please consult a healthcare provider for personalized advice.",
+    "source_id": 201,
+    "source_url": "https://my.clevelandclinic.org/podcasts/ob-gyn-time/pcos-anovulation-and-infertility",
+    "source_title": "PCOS, Anovulation and Infertility - Cleveland Clinic",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What symptoms of PCOS is the author experiencing?",
+    "answer": "The author is experiencing weight gain, irregular cycles, and increased facial hair [Source: Acupuncture experience]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 203,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1cloa08/acupuncture_experience/",
+    "source_title": "Acupuncture experience : r/PCOS - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a prevalent endocrine disorder associated with insulin resistance and cardiovascular risk. It is characterized by various symptoms, including metabolic abnormalities and an increased risk of type 2 diabetes, but not necessarily linked to increased mortality or other chronic diseases.",
+    "source_id": 204,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41171273/",
+    "source_title": "Polycystic Ovarian Morphology and Chronic Morbidity and Mortality ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What lifestyle modifications were suggested to help manage PCOS?",
+    "answer": "The article mentions that lifestyle modifications such as moderate intensity workouts 3-5 times a week, keeping a diary or journal for tracking symptoms and cycles, and a focus on diet were recommended. These changes were emphasized as helpful in managing PCOS [Source: My PCOS experience so far]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 205,
+    "source_url": "https://www.reddit.com/r/PCOSPhilippines/comments/1kyuj78/my_pcos_experience_so_far/",
+    "source_title": "My PCOS experience so far : r/PCOSPhilippines - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is the most common endocrinopathy in women at childbearing age, with a prevalence ranging from five to 18% depending on the population. Diagnosis relies on the Rotterdam criteria, which requires the presence of at least two out of three parameters: irregular menstrual cycles, clinical or biochemical hyperandrogenism, and polycystic ovarian morphology. [Source: Anti-Müllerian hormone a surrogate of follicular fluid oxidative stress in polycystic ovary syndrome?] Please consult a healthcare provider for personalized advice.",
+    "source_id": 206,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11246868/",
+    "source_title": "Anti-Müllerian hormone a surrogate of follicular fluid oxidative stress ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What was the objective of the study on PCOS?",
+    "answer": "The objective was to study the cardiometabolic markers in women with polycystic ovary syndrome (PCOS) across all phenotypes and its correlation with serum anti-mullerian hormone (AMH) levels. [Source: Cardiometabolic markers and serum amh levels in PCOS - PubMed] Please consult a healthcare provider for personalized advice.",
+    "source_id": 207,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/40057787/",
+    "source_title": "Cardiometabolic markers and serum amh levels in PCOS - PubMed",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the objective of the study mentioned in the article?",
+    "answer": "The objective of the study is to explore the role of anti-Mullerian hormone (AMH) and LH/FSH ratio in the diagnosis of polycystic ovary syndrome (PCOS). [Source: Exploration of the role of anti-Mullerian hormone and LH/FSH ratio ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 209,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/30636332/",
+    "source_title": "Exploration of the role of anti-Mullerian hormone and LH/FSH ratio ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What were the LH and FSH levels mentioned in the article?",
+    "answer": "The LH level mentioned was 11.50 and the FSH level was 6.02 [Source: LH and FSH levels]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 210,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/19a9yd8/lh_and_fsh_levels/",
+    "source_title": "LH and FSH levels : r/PCOS - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is the LH:FSH ratio mentioned in the article and how has it changed over time?",
+    "answer": "The LH:FSH ratio mentioned in the article increased from 1.6:1 last year to 2.7:1 this year, which the doctor indicated is a main reason for the author's anovulation despite having normal results in other tests. [Source: Lean PCOS with rising LH:FSH ratio, why is my body not ovulating ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 211,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1q6makz/lean_pcos_with_rising_lhfsh_ratio_why_is_my_body/",
+    "source_title": "Lean PCOS with rising LH:FSH ratio, why is my body not ovulating ...",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What symptoms did the individual experience before being diagnosed with PCOS?",
+    "answer": "The individual experienced headaches, fatigue, weight gain, inability to lose weight, brain fog, depression, and muscle pain before being diagnosed with PCOS via ultrasound. [Source: Would love any response to this post: PCOS, Hypothyroidism.] Please consult a healthcare provider for personalized advice.",
+    "source_id": 213,
+    "source_url": "https://www.reddit.com/r/InfertilitySucks/comments/106rtua/would_love_any_response_to_this_post_pcos/",
+    "source_title": "Would love any response to this post: PCOS, Hypothyroidism. - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a complex condition that affects how a woman’s ovaries work and can cause symptoms like irregular periods, weight gain, and difficulty getting pregnant [Source: Subclinical Hypothyroidism in Polycystic Ovary Syndrome - PMC - NIH]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 214,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12134519/",
+    "source_title": "Subclinical Hypothyroidism in Polycystic Ovary Syndrome - PMC - NIH",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the prevalence of hypothyroidism among women diagnosed with PCOS in the study?",
+    "answer": "The study found that 20.87% of the participants had thyroid-stimulating hormone levels greater than 5 μIU/mL, indicating a prevalence of hypothyroidism among PCOS patients.",
+    "source_id": 215,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12143108/",
+    "source_title": "Evaluation of Thyroid Function Status Among Diagnosed Cases of ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is metabolic syndrome (MetS) and why is it important?",
+    "answer": "Metabolic syndrome (MetS) is a clustering of factors known to increase the risk for cardiovascular disease (CVD) and diabetes mellitus. It is important because it encompasses cardiovascular risk factors like dyslipidemia, impaired fasting glucose levels, abdominal obesity, and high blood pressure, which can have serious health implications for individuals, particularly women with polycystic ovary syndrome (PCOS) who are at a higher risk for these conditions. [Source: Metabolic Syndrome and Its Characteristics among Reproductive...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 216,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3850322/",
+    "source_title": "Metabolic Syndrome and Its Characteristics among Reproductive ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the prevalence of metabolic syndrome (MetS) in women with polycystic ovary syndrome (PCOS) according to the study?",
+    "answer": "The prevalence of MetS in women with PCOS was found to be 28.8% in the study conducted in Rasht, Iran.",
+    "source_id": 217,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4793169/",
+    "source_title": "Metabolic Syndrome in Patients with Polycystic Ovary ... - PMC - NIH",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the prevalence of metabolic syndrome among women with polycystic ovary syndrome (PCOS)?",
+    "answer": "The prevalence of metabolic syndrome (MS) among women with polycystic ovary syndrome (PCOS) can reach up to 33% [Source: Common clinical laboratory features among women with polycystic ...]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 218,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10652679/",
+    "source_title": "Common clinical laboratory features among women with polycystic ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What were the two groups of women with PCOS categorized by in the study?",
+    "answer": "The women with PCOS were divided into two groups based on their body mass index (BMI): Group A, which included overweight and obese women with BMI >23, and Group B, which included normal weight and lean women with BMI ≤23. [Source: Comparison of clinical features and health manifestations in lean vs. obese Indian women with polycystic ovarian syndrome]",
+    "source_id": 219,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2700686/",
+    "source_title": "Comparison of clinical features and health manifestations in lean vs ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the relationship between obesity and PCOS?",
+    "answer": "Obesity is likely not a cause of PCOS, as the high prevalence of PCOS among relatively thin populations demonstrates. However, obesity does exacerbate many aspects of the PCOS phenotype, especially cardiovascular risk factors and poor responses to infertility treatment. It is important not to overlook the PCOS that presents with obesity, as obesity modifies the PCOS phenotype metabolically and can blunt treatment responses, especially in infertility cases. [Source: Obesity and PCOS: Implications for Diagnosis and Treatment] Please consult a healthcare provider for personalized advice.",
+    "source_id": 220,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3649566/",
+    "source_title": "Obesity and PCOS: Implications for Diagnosis and Treatment - PMC",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is lean PCOS?",
+    "answer": "Lean PCOS refers to a form of polycystic ovary syndrome that can occur in individuals who are thin. Even those with lean PCOS may have some visceral fat, which can affect normal ovulation. [Source: Lean PCOS, What is with me? Anyone researched this?] Please consult a healthcare provider for personalized advice.",
+    "source_id": 221,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/13flydi/lean_pcos_what_is_with_me_anyone_researched_this/",
+    "source_title": "Lean PCOS, What is with me? Anyone researched this? - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What symptoms of PCOS did the individual in the article experience since a young age?",
+    "answer": "The individual experienced classic PCOS symptoms such as hirsutism, cystic acne, and irregular periods since they were young [Source: Any others with lean PCOS who have gained weight as they've aged?]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 222,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/zzhnkd/any_others_with_lean_pcos_who_have_gained_weight/",
+    "source_title": "Any others with lean PCOS who have gained weight as they've aged?",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a common endocrine disorder in women of reproductive age that increases the risk for cardiometabolic morbidity. [Source: The Effect of Exercise on Cardiometabolic Risk Factors in Women ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 223,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/35162403/",
+    "source_title": "The Effect of Exercise on Cardiometabolic Risk Factors in Women ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is a female disorder that affects various aspects of women's health and is characterized by hormonal imbalances leading to symptoms like irregular menstrual cycles, anovulation, and infertility. Other manifestations may include hirsutism, acne, male pattern alopecia, and hyperandrogenism. Women with PCOS are also at increased risk for obesity, type 2 diabetes, cardiovascular diseases, and certain cancers.",
+    "source_id": 224,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9934983/",
+    "source_title": "The Effect of Exercise on Inflammatory Markers in PCOS Women",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS) associated with?",
+    "answer": "Polycystic ovary syndrome (PCOS) is associated with increased prevalence of serious clinical problems including reproductive implications, metabolic dysfunction, and cardiovascular risk. [Source: The effect of exercise as an intervention for women with polycystic ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 225,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/32311937/",
+    "source_title": "The effect of exercise as an intervention for women with polycystic ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "How does Metformin affect exercise routines for individuals who take it?",
+    "answer": "Individuals who take Metformin may experience changes in their exercise routine, and some workouts may feel better than others. It's important for those starting Metformin to consider how the medication might affect their performance during workouts, especially regarding gastrointestinal side effects. Those active in workouts prior to starting the medication may have concerns about maintaining their routine due to these side effects. [Source: What's been your experience with Metformin and exercise? : r/PCOS] Please consult a healthcare provider for personalized advice.",
+    "source_id": 226,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1hi18i2/whats_been_your_experience_with_metformin_and/",
+    "source_title": "What's been your experience with Metformin and exercise? : r/PCOS",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "How can I develop a habit of exercising if I dislike going to the gym?",
+    "answer": "Finding enjoyable activities that keep you active can help. Since you already walk a lot at your job, consider incorporating fun outdoor activities or light exercises that you enjoy. This can make the process feel less like a chore. Please consult a healthcare provider for personalized advice.",
+    "source_id": 227,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1616bqz/recently_diagnosed_and_i_know_i_need_to_exercise/",
+    "source_title": "Recently diagnosed, and I know I need to exercise. But I honestly ...",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What was the main objective of the study on diet and physical activity among women with PCOS?",
+    "answer": "The main objective of the study was to investigate the diet and physical activity habits among women with polycystic ovary syndrome (PCOS) and compare them with age and BMI matched controls [Source: Diet and physical activity behaviors among women with polycystic ...]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 228,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/41428711/",
+    "source_title": "Diet and physical activity behaviors among women with polycystic ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is one of the most common endocrinology disorders among women in reproductive age, characterized by symptoms such as amenorrhea, irregular menstrual cycles, clinical or laboratory evidence of androgen excess, and morphological changes in the ovaries [Source: Healthy eating index in women with polycystic ovary syndrome - PMC]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 229,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5894473/",
+    "source_title": "Healthy eating index in women with polycystic ovary syndrome - PMC",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What are the key features required for a diagnosis of PCOS in adolescents?",
+    "answer": "The diagnosis of PCOS in adolescents is based on the presence of both irregular menstrual cycles and clinical or biochemical hyperandrogenism, following the exclusion of other disorders that mimic PCOS. If an adolescent only has one of these features, they can be considered 'at risk' of PCOS, requiring symptom management and ongoing follow-up. Polycystic ovarian morphology on pelvic ultrasonography or anti-Müllerian hormone levels should not be used for diagnosis during adolescence.",
+    "source_id": 230,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11899933/",
+    "source_title": "International evidence-based recommendations for polycystic ovary ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a common endocrine disorder affecting adolescent and young adult females, characterized by infrequent menstruation, chronic or absent ovulation, hyperandrogenemia, and polycystic ovarian changes. It can also increase the risk of obesity, type 2 diabetes, cardiovascular disease, and anxiety or depression, creating significant economic burdens on public health and families. Approximately 11-13% of women worldwide suffer from PCOS, and its prevalence has doubled over the past three decades among females aged 10–24 years, affecting 6-18% of adolescents.",
+    "source_id": 231,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12104063/",
+    "source_title": "Evolving global trends in PCOS burden: a three-decade analysis ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What are some signs that might indicate a 13-year-old could have PCOS?",
+    "answer": "Some signs that a 13-year-old might have PCOS include having irregular periods, excess body hair, bloating, oily skin, and acne on the chest and belly area. These symptoms can cause concern and lead to overthinking about the condition [Source: Can a 13 year old have PCOS? - Reddit]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 232,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1jrwr2j/can_a_13_year_old_have_pcos/",
+    "source_title": "Can a 13 year old have PCOS? - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What symptoms might indicate the presence of PCOS?",
+    "answer": "Symptoms that may indicate the presence of PCOS include hair loss, weight gain, adult acne, and irregular periods [Source: Tell me your PCOS story! : r/PCOS - Reddit]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 233,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/k95afq/tell_me_your_pcos_story/",
+    "source_title": "Tell me your PCOS story! : r/PCOS - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is one of the most common endocrine disorders that affects 5%–15% of women of reproductive age, characterized by features such as oligo- or anovulation, hyperandrogenism, and polycystic ovaries.",
+    "source_id": 234,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7546360/",
+    "source_title": "Pregnancy Outcomes of Women With Polycystic Ovary Syndrome for ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What age was the person diagnosed with PCOS and what were they told about their chances of conceiving?",
+    "answer": "The person was diagnosed with PCOS at 15 and was told that they would probably never get pregnant, and if so, they would have several miscarriages. [Source: What's your PCOS journey? : r/TTC_PCOS - Reddit] Please consult a healthcare provider for personalized advice.",
+    "source_id": 235,
+    "source_url": "https://www.reddit.com/r/TTC_PCOS/comments/1832rgw/whats_your_pcos_journey/",
+    "source_title": "What's your PCOS journey? : r/TTC_PCOS - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is one of the most common endocrine disorders in reproductive-aged women, with a prevalence that varies from 6 to 18% depending on the diagnostic criteria used. It is characterized by factors such as body weight and lifestyle and can lead to various reproductive issues, including anovulatory infertility.",
+    "source_id": 236,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4382527/",
+    "source_title": "Mental Health and Physical Activity in Women with Polycystic Ovary ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome is an endocrine disorder affecting 1 in 10 women, and it can lead to various symptoms and co-morbidities, including depressive symptoms [Source: Exploring women's experiences of living with polycystic ovary]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 237,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5193274/",
+    "source_title": "Exploring women's experiences of living with polycystic ovary ... - PMC",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What symptoms did the person mention experiencing due to PCOS?",
+    "answer": "The person mentioned experiencing gradual hair loss, bouts of depression and anxiety lasting for weeks or months, insomnia, and fatigue. [Source: People who've reversed or maintained PCOS symptoms ... - Reddit] Please consult a healthcare provider for personalized advice.",
+    "source_id": 239,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/sw8nmd/people_whove_reversed_or_maintained_pcos_symptoms/",
+    "source_title": "People who've reversed or maintained PCOS symptoms ... - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What was the main objective of the study on middle-aged women with PCOS?",
+    "answer": "The main objective was to assess the cardiometabolic phenotype and prevalence of cardiovascular disease (CVD) in middle-aged women with polycystic ovary syndrome (PCOS), compared with age-matched controls, and to estimate their 10-year CVD risk and cardiovascular health score. [Source: The cardiovascular risk profile of middle-aged women ... - PubMed] Please consult a healthcare provider for personalized advice.",
+    "source_id": 240,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/31638273/",
+    "source_title": "The cardiovascular risk profile of middle-aged women ... - PubMed",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the main objective of the study described in the article?",
+    "answer": "The main objective of the study was to assess the performance of the PREVENT risk model in predicting 10-year cardiovascular disease (CVD) risk in women, particularly those with polycystic ovary syndrome (PCOS), and to evaluate its discrimination and calibration in a representative female sample of the Iranian general population [Source: Prediction of cardiovascular disease risk in women and individuals ...]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 241,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12848994/",
+    "source_title": "Prediction of cardiovascular disease risk in women and individuals ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is the most common endocrine disorder in reproductive-age women, characterized by both reproductive and metabolic disorders, and is associated with an increased risk of obesity, impaired glucose tolerance, diabetes, dyslipidemia, hypertension, and metabolic syndrome, among other cardiovascular and metabolic abnormalities. [Source: Cardiovascular Events in Polycystic Ovary Syndrome - PMC - NIH] Please consult a healthcare provider for personalized advice.",
+    "source_id": 242,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255611/",
+    "source_title": "Cardiovascular Events in Polycystic Ovary Syndrome - PMC - NIH",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What prompted the individual to ask their doctor about PCOS and insulin resistance?",
+    "answer": "The individual wanted to know how to get diagnosed for PCOS related insulin resistance while collecting health screening results for insurance [Source: Just had a doctor told me off]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 244,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1p114g8/just_had_a_doctor_told_me_off/",
+    "source_title": "Just had a doctor told me off : r/PCOS - Reddit",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS) and how common is it?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) affects about 5–15% of pre-menopausal women worldwide, with no significant racial or ethnic variation in its prevalence. [Source: What are the Links Between Polycystic Ovary Syndrome (PCOS ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 246,
+    "source_url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/links-pcos-diabetes",
+    "source_title": "What are the Links Between Polycystic Ovary Syndrome (PCOS ...",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What are some common symptoms of PCOS?",
+    "answer": "Common symptoms of PCOS include reproductive abnormalities leading to chronic anovulation, which is characterized by irregular menstrual cycles, increased male hormone production, abnormal hair growth, acne, and hair loss. [Source: What are the Links Between Polycystic Ovary Syndrome (PCOS ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 246,
+    "source_url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/links-pcos-diabetes",
+    "source_title": "What are the Links Between Polycystic Ovary Syndrome (PCOS ...",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "How is insulin resistance related to PCOS?",
+    "answer": "Insulin resistance is present in the majority of women with PCOS, and it is believed to disrupt ovulation and stimulate the ovaries to produce more androgens in synergy with luteinizing hormone (LH). [Source: What are the Links Between Polycystic Ovary Syndrome (PCOS ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 246,
+    "source_url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/links-pcos-diabetes",
+    "source_title": "What are the Links Between Polycystic Ovary Syndrome (PCOS ...",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What risk factors are associated with the development of type 2 diabetes in women with PCOS?",
+    "answer": "Risk factors for the development of type 2 diabetes in women with PCOS include obesity, particularly in those with a BMI of 30 or greater, and a family history of type 2 diabetes. [Source: What are the Links Between Polycystic Ovary Syndrome (PCOS ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 246,
+    "source_url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/links-pcos-diabetes",
+    "source_title": "What are the Links Between Polycystic Ovary Syndrome (PCOS ...",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What treatments are commonly recommended for women with PCOS who have prediabetes?",
+    "answer": "For women with PCOS who have prediabetes, recommendations typically include weight reduction, moderate exercise, and the prescription of metformin, as it has additional reproductive benefits. [Source: What are the Links Between Polycystic Ovary Syndrome (PCOS ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 246,
+    "source_url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/links-pcos-diabetes",
+    "source_title": "What are the Links Between Polycystic Ovary Syndrome (PCOS ...",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "Are there genetic factors associated with PCOS?",
+    "answer": "Yes, PCOS runs in families, and sisters of women with PCOS have an increased risk of developing the condition. Approximately 20 susceptibility genes have been discovered that may be linked to PCOS. [Source: What are the Links Between Polycystic Ovary Syndrome (PCOS ...] Please consult a healthcare provider for personalized advice.",
+    "source_id": 246,
+    "source_url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/links-pcos-diabetes",
+    "source_title": "What are the Links Between Polycystic Ovary Syndrome (PCOS ...",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a heterogeneous clinical syndrome among reproductive-aged women characterized by menstrual irregularities due to anovulation, either biochemical or clinical evidence of hyperandrogenism, and the exclusion of other diagnoses [Source: Polycystic Ovary Syndrome and Risk for Long-Term Diabetes]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 247,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3060760/",
+    "source_title": "Polycystic Ovary Syndrome and Risk for Long-Term Diabetes ... - PMC",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is polycystic ovary syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome (PCOS) is a condition that can cause various health issues, including an increased risk of diabetes and dyslipidemia, particularly in women aged 20-32 years who meet certain diagnostic criteria.",
+    "source_id": 248,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/21173640/",
+    "source_title": "Polycystic ovary syndrome and risk for long-term diabetes ... - PubMed",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS) commonly associated with?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is commonly associated with obesity and increased risk for type 2 diabetes (T2D) [Source: Prospective Risk of Type 2 Diabetes in Normal Weight Women with Polycystic Ovary Syndrome]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 249,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9220967/",
+    "source_title": "Prospective Risk of Type 2 Diabetes in Normal Weight Women with ...",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a hormonal disorder characterized by the ovaries producing an abnormal amount of androgen (male sex hormones) and affects 6–12% of women of reproductive age in the United States. It causes symptoms such as irregular periods, excess body hair, weight gain, acne, and infertility, and increases the risk of long-term complications like heart disease and diabetes. [Source: Diabetes screening among women with Polycystic Ovary Syndrome] Please consult a healthcare provider for personalized advice.",
+    "source_id": 250,
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11065069/",
+    "source_title": "Diabetes screening among women with Polycystic Ovary Syndrome",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a common endocrine disorder affecting up to one in five reproductive-aged women, characterized by insulin resistance and hyperandrogenism, along with metabolic, reproductive, and psychological features. [Source: Polycystic Ovary Syndrome, Obesity, and Pregnancy] Please consult a healthcare provider for personalized advice.",
+    "source_id": 251,
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/26854709/",
+    "source_title": "Polycystic Ovary Syndrome, Obesity, and Pregnancy - PubMed",
+    "source_type": "research_paper",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What should I know about pregnancy if I have PCOS?",
+    "answer": "The article does not provide specific information about pregnancy and PCOS. For accurate advice, please consult a healthcare provider for personalized advice.",
+    "source_id": 252,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/eqvvcu/what_are_your_experiences_with_pregnancy_how_did/",
+    "source_title": "What are your experiences with pregnancy? How did it work out?",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovarian Syndrome (PCOS)?",
+    "answer": "Polycystic ovarian syndrome (PCOS) is the most common endocrine disorder among females of reproductive age worldwide, characterized by insulin resistance and hormonal abnormalities, leading to various comorbidities such as infertility and metabolic syndrome. [Source: Polycystic Ovarian Syndrome - StatPearls - NCBI Bookshelf] Please consult a healthcare provider for personalized advice.",
+    "source_id": 253,
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK459251/",
+    "source_title": "Polycystic Ovarian Syndrome - StatPearls - NCBI Bookshelf",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What symptoms of PCOS did Ali Chappell experience during her teenage years?",
+    "answer": "Ali Chappell experienced symptoms of excess weight, severe acne, cystic ovaries, infrequent periods, and crippling anxiety during her teenage years. She did not receive a diagnosis until she was 21 years old.",
+    "source_id": 255,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/14w6bqz/pcos_my_story_of_pain_passion_and_perseverance/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is PCOS?",
+    "answer": "PCOS stands for Polycystic Ovary Syndrome, which is a condition that affects women's hormone levels and can lead to various symptoms. [Source: What women should know about PCOS: Issy’s story | Women's Voices | Bupa Health - YouTube] Please consult a healthcare provider for personalized advice.",
+    "source_id": 256,
+    "source_url": "https://www.youtube.com/watch?v=TRL5l0pqK0U",
+    "source_title": "What women should know about PCOS: Issy’s story | Women's Voices | Bupa Health - YouTube",
+    "source_type": "video",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is the purpose of the Reddit post about PCOS?",
+    "answer": "The purpose of the Reddit post is to share experiences with Polycystic ovary syndrome (PCOS) and to provide support to those who may feel alone in dealing with the condition. The author expresses gratitude for the responses, highlighting that many do not know much about PCOS and that sharing experiences can be helpful to others. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 257,
+    "source_url": "https://www.reddit.com/r/AskWomen/comments/lkgrp1/hi_ladies_what_were_your_experiences_like_with/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is hyperandrogenism?",
+    "answer": "Hyperandrogenism happens when you have high amounts of androgens (a group of sex hormones) in your body. It most commonly affects females and can cause excessive hair growth, acne, and irregular periods. [Source: Hyperandrogenism: What It Is, Symptoms & Treatment]",
+    "source_id": 25,
+    "source_url": "https://my.clevelandclinic.org/health/diseases/24639-hyperandrogenism",
+    "source_title": "Hyperandrogenism: What It Is, Symptoms & Treatment",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What are some characteristics of the PCOS presentation mentioned in the article?",
+    "answer": "The PCOS presentation mentioned includes long irregular cycles, multiple follicles seen in an ultrasound, and a diagnosis made at age 17. The individual also does not have insulin resistance, hirsutism, and has a normal BMI of around 20, but experiences some adult acne and has an indicative FSH/LH ratio and an ultrasound confirming antral follicular counts of > 16 on both ovaries, which are also indicative of PCOS. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 262,
+    "source_url": "https://www.reddit.com/r/TTC_PCOS/comments/1md9rsk/what_was_your_experience_pcos_lean_no_insulin/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What medication did the author mention using to manage insulin resistance?",
+    "answer": "The author mentioned using Metformin to manage insulin resistance related to PCOS [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 263,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/ozot6y/i_think_insulin_resistance_was_the_cause_of_my/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What condition did Kelly struggle with on her journey?",
+    "answer": "Kelly struggled with PCOS, which stands for polycystic ovary syndrome, as well as insulin resistance during her journey. [Source: Kelly's Success Story - A Journey With PCOS, Insulin Resistance and IVF - YouTube] Please consult a healthcare provider for personalized advice.",
+    "source_id": 264,
+    "source_url": "https://www.youtube.com/watch?v=yi-c8n7qDLc",
+    "source_title": "Kelly's Success Story - A Journey With PCOS, Insulin Resistance and IVF - YouTube",
+    "source_type": "video",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is the BMI mentioned in the article for the individual experiencing PCOS?",
+    "answer": "The individual's BMI mentioned in the article is 18.2 [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 265,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1e7dgur/pcos_experience_with_low_bmi_and_no_insulin/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is PCOS?",
+    "answer": "Polycystic ovarian syndrome, or PCOS, is the most common hormonal disorder among women of childbearing age, affecting about 1 in 10 women between the ages of 15 and 49. It is characterized by a constellation of symptoms including weight gain, unwanted hair growth, irregular menstrual cycles, and fertility challenges. [Source: Confused About PCOS? We've Got the Facts] Please consult a healthcare provider for personalized advice.",
+    "source_id": 267,
+    "source_url": "https://www.cedars-sinai.org/stories-and-insights/healthy-living/confused-about-pcos-weve-got-the-facts",
+    "source_title": "Confused About PCOS? We've Got the Facts | Cedars-Sinai",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What symptoms did the individual experience after stopping Yaz birth control?",
+    "answer": "After stopping Yaz, the individual experienced irregular cycles, with cycle lengths varying from 39 to 81 days. Additionally, they developed bad acne on their back, which cleared up after several months, but they started breaking out with cystic acne on their chin and neck since August 2023. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 269,
+    "source_url": "https://www.reddit.com/r/TryingForABaby/comments/190fdc1/irregular_cycles_pcos_or_body_still_regulating/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Can your periods suddenly become irregular if you have PCOS?",
+    "answer": "Yes, it is possible for periods to suddenly become irregular even if you have previously been regular, as indicated by the experience shared in the article. Hormonal changes associated with PCOS can lead to fluctuations in menstrual cycles. It's important to monitor these changes and consult a healthcare provider for personalized advice.",
+    "source_id": 270,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1nujdng/periods_suddenly_irregular_after_always_being/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Is it normal to have long periods if I have PCOS?",
+    "answer": "Yes, it is not uncommon for women with PCOS to experience long periods, although some may have the opposite issue of not having periods at all. Please consult a healthcare provider for personalized advice.",
+    "source_id": 271,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/swn5w7/never_ending_period/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Can someone have PCOS with no symptoms other than irregular periods?",
+    "answer": "Yes, it is possible for someone to have PCOS and only experience irregular periods without other common symptoms such as weight gain or excessive hair growth. Individual experiences with PCOS can vary widely, and some may not show typical symptoms. It's important to consult with a healthcare provider for personalized advice.",
+    "source_id": 272,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/14hbpu0/do_any_of_you_have_pcos_with_zero_symptoms/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is a common experience for some people with PCOS regarding their menstrual cycles?",
+    "answer": "Some people with PCOS may experience irregular menstrual cycles, such as having more than one period in a month or going several months without a period. Some individuals report having periods for weeks at a time or experiencing prolonged bleeding [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 277,
+    "source_url": "https://www.reddit.com/r/intersex/comments/1lqxq7y/ncahpcoshyperandrogenism/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What do some people believe about birth control in relation to PCOS?",
+    "answer": "Some people believe that birth control is a 'bandaid' for PCOS and does not actually fix the underlying issue of the condition [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 278,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1ohmv2l/i_keep_seeing_people_online_saying_that_birth/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What were the author's experiences regarding side effects while taking metformin?",
+    "answer": "The author reported experiencing mild nausea while weaning up to three daily doses of metformin, but never to the point of needing to vomit. They also mentioned having an upset tummy on a few occasions, often after overeating certain foods like cheese or ice cream. The most challenging side effect was the psychological fear of needing to use the bathroom in public, which they managed through techniques like box breathing. Overall, the author's experience with the gastrointestinal side effects was better than anticipated, and they noted significant improvements in their gut health since starting the medication [Source: My honest unedited experience on metformin over 2 months later]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 279,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1oiyq6p/my_honest_unedited_experience_on_metformin_over_2/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is hirsutism?",
+    "answer": "Hirsutism is the growth of coarse dark hair in areas typical of male-pattern hair growth, such as above the lips, on the chin, chest, abdomen, or back [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What are some common causes of unwanted hair growth in women?",
+    "answer": "Common causes of unwanted hair growth include polycystic ovarian syndrome (PCOS), thyroid disorders, tumors or cancers of the adrenal gland or ovary, Cushing syndrome, and the use of certain medications [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "How can PCOS lead to hirsutism?",
+    "answer": "PCOS is a common cause of hirsutism, where women may have excess male hormones that contribute to unwanted hair growth, alongside symptoms like acne and problems with menstrual periods [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What symptoms are associated with hirsutism?",
+    "answer": "The main symptom of hirsutism is the presence of coarse dark hair in areas sensitive to male hormones, including the chin, upper lip, chest, upper abdomen, back, buttocks, and inner thighs [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What tests might a healthcare provider conduct to diagnose hirsutism?",
+    "answer": "Tests that may be conducted include thyroid stimulating hormone (TSH), testosterone tests, DHEA-sulfate tests, pelvic ultrasound, and imaging tests like CT scans or MRIs if virilization is present [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What treatment options are available for hirsutism?",
+    "answer": "Treatment options for hirsutism include medications such as birth control pills and anti-androgen medicines, as well as hair removal methods like electrolysis and laser treatments. Temporary methods include shaving, plucking, and waxing [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "Does shaving hair cause it to grow back thicker?",
+    "answer": "Shaving does not cause more hair to grow; however, it may make hair appear thicker [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What lifestyle change may help reduce unwanted hair growth in women who are overweight?",
+    "answer": "For women who are overweight, weight loss may help reduce hair growth [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "When should a woman contact her healthcare provider regarding hair growth?",
+    "answer": "A woman should contact her healthcare provider if hair grows rapidly, if she has male features such as acne or deepening voice, or if she is concerned that medication may be increasing unwanted hair growth [Source: Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 280,
+    "source_url": "https://www.nlm.nih.gov/medlineplus/ency/article/007622.htm",
+    "source_title": "Excessive or unwanted hair in women: MedlinePlus Medical Encyclopedia",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is hirsutism?",
+    "answer": "Hirsutism is the growth of excessive male-pattern hair in women after puberty, affecting areas such as the mustache, beard, pubic hair, buttocks, and thighs. It is a frequent reason for dermatological consultation and affects nearly 10% of women in the United States. [Source: Hirsutism - StatPearls - NCBI Bookshelf] Please consult a healthcare provider for personalized advice.",
+    "source_id": 281,
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK470417/",
+    "source_title": "Hirsutism - StatPearls - NCBI Bookshelf",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is hirsutism?",
+    "answer": "Hirsutism is the condition of having excess body hair growth in areas typically associated with male-pattern hair growth, such as around the nipples, chest, inner thighs, and stomach. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 286,
+    "source_url": "https://www.reddit.com/r/LesbianActually/comments/18gsa64/experience_with_women_who_have_hirsutism/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is a common struggle for women with PCOS mentioned in the article?",
+    "answer": "A common struggle for women with PCOS mentioned in the article is hirsutism, which involves excessive facial hair growth that may require daily shaving. This can lead to feelings of embarrassment, especially when noticed by others, such as children at work. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 287,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/18x808p/living_with_hirsutism_need_advice/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What might exacerbate acne in people with polycystic ovary syndrome (PCOS)?",
+    "answer": "Acne in people with confirmed polycystic ovarian syndrome may be exacerbated by hyperandrogenism, potentially resulting in persistent or recurrent acne. [Source: Management options for people with acne vulgaris and polycystic ovary syndrome] Please consult a healthcare provider for personalized advice.",
+    "source_id": 294,
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK573053/",
+    "source_title": "Management options for people with acne vulgaris and polycystic ovary syndrome - NCBI Bookshelf",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What are some common symptoms of PCOS mentioned in the article?",
+    "answer": "Some common symptoms of PCOS mentioned in the article include excessive facial hair and irregular periods. Additionally, weight loss can be difficult for those experiencing these symptoms [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 295,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/iencmu/anyone_has_a_pcos_success_story/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some common skincare approaches mentioned by individuals with PCOS to manage acne?",
+    "answer": "Individuals with PCOS often discuss various approaches to manage their acne, including the use of supplements, vitamins, specific topicals, face washes, moisturizers, and sometimes prescribed medications. They might also consider dietary changes or avoiding certain foods to help with their skin issues. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 296,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/16fw97n/to_my_fellow_pcos_girlies_who_strugglestruggled/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What natural remedies did the author try to help with hormonal acne associated with PCOS?",
+    "answer": "The author tried Inositol, NAC, spearmint tea, and dandelion root tea to help with hormonal acne associated with PCOS. They found that spearmint tea helped with ovulation acne and dandelion root tea was effective for period acne, leading to significant improvement in their condition over time. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 297,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/v3d7jx/sharing_what_helped_clear_my_hormonal_acne/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some common symptoms of polycystic ovary syndrome (PCOS)?",
+    "answer": "Common symptoms of PCOS include irregular or absent menstrual periods, difficulty conceiving or infertility, excessive hair on the face or body, female-pattern baldness or hair thinning, and acne or oily skin. Symptoms can differ from person to person and may change over time [Source: Simulated Discovery]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 2,
+    "source_url": "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome",
+    "source_title": "Simulated Discovery URL",
+    "source_type": "public_health",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is the author's age and medical condition?",
+    "answer": "The author is 37 years old and has PCOS (Polycystic Ovary Syndrome) [Source: IVF and PCOS, advice and experience appreciated]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 300,
+    "source_url": "https://www.reddit.com/r/IVF/comments/114abla/ivf_and_pcos_advice_and_experience_appreciated/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What concerns were raised about the cysts on the ovaries?",
+    "answer": "The cysts on both ovaries, which looked like a string of grapes, might stop the individual from ovulating and could be causing acne. The doctor recommended following up with a fertility clinic for further evaluation [Source: PCOS ladies and anovulation]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 304,
+    "source_url": "https://www.reddit.com/r/TryingForABaby/comments/1ftak36/pcos_ladies_and_anovulation/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Can I be treated for infertility through a Gynecologist instead of a Reproductive Endocrinologist if I have PCOS?",
+    "answer": "Yes, some individuals consider seeing a Gynecologist for infertility treatment instead of a Reproductive Endocrinologist due to convenience, such as proximity. However, personal experiences may vary, and it's essential to evaluate the effectiveness of such treatment options. Please consult a healthcare provider for personalized advice.",
+    "source_id": 305,
+    "source_url": "https://www.reddit.com/r/InfertilityBabies/comments/iplw8r/does_anyone_have_experience_being_treated_through/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is a modified natural cycle in the context of PCOS?",
+    "answer": "A modified natural cycle refers to a treatment approach where the patient does not use strong medications to stimulate ovulation, allowing for a more natural ovulation process, especially for those who do not ovulate regularly on their own. [Source: Anovulatory PCOS FET protocol] Please consult a healthcare provider for personalized advice.",
+    "source_id": 306,
+    "source_url": "https://www.reddit.com/r/IVF/comments/1h2ev4l/anovulatory_pcos_fet_protocol/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are the symptoms mentioned in the article that the individual does not have despite the ultrasound findings?",
+    "answer": "The individual does not have any symptoms other than anovulation, which includes normal cycles, regular bleeding, no abnormal pain, and no spotting [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 310,
+    "source_url": "https://www.reddit.com/r/TryingForABaby/comments/1o37za9/polycystic_morphology_but_no_pcos_symptoms/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What does it mean to have PCOS morphology?",
+    "answer": "PCOS morphology refers to the physical characteristics associated with Polycystic Ovary Syndrome (PCOS) that may be observed during medical examinations, such as ultrasounds, indicating potential signs of the condition. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 311,
+    "source_url": "https://www.reddit.com/r/Endo/comments/12p78c9/endo_and_now_pcos_morphology/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What should I do after being diagnosed with PCOS?",
+    "answer": "It is important to consult a healthcare provider, such as a gynecologist, for personalized advice on managing PCOS. They can provide guidance on treatment options and lifestyle changes that may help you. Please consult a healthcare provider for personalized advice.",
+    "source_id": 312,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1rnwf75/i_was_recently_diagnosed_with_pcos_and_i_am_not/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What does having elevated AMH levels indicate in relation to PCOS?",
+    "answer": "Elevated AMH levels can indicate a higher number of small follicles on the ovaries, which may be associated with conditions like PCOS. However, it's important to note that a person can have elevated AMH levels and still be lean with no other PCOS symptoms, as mentioned in the article. Please consult a healthcare provider for personalized advice.",
+    "source_id": 320,
+    "source_url": "https://www.reddit.com/r/TTC_PCOS/comments/sgipsl/lean_pcos_and_elevated_amh/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What concerns does the individual have about their IVF cycle related to PCOS?",
+    "answer": "The individual is nervous and worried about going through IVF and facing complications or delays due to their condition, which is PCOS with anovulation and a very high AMH of 12.6. They are seeking advice from others with similar experiences.",
+    "source_id": 321,
+    "source_url": "https://www.reddit.com/r/IVF/comments/1leludb/any_ladies_with_pcos_and_high_amh/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is the typical LH:FSH ratio for women with PCOS?",
+    "answer": "Most women with PCOS have a 3:1 LH:FSH ratio instead of the ideal 1:1 [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 329,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/6ed8jf/backwards_lhfsh_ratio/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is hirsutism?",
+    "answer": "Hirsutism is a condition that causes excess hair to grow on certain parts of your body, primarily affecting females. It leads to thick, dark hair growth in areas typically covered by fine, light hair, which can cause distress, but it is treatable. [Source: Hirsutism: What It Is, In Women, Causes, PCOS & Treatment] Please consult a healthcare provider for personalized advice.",
+    "source_id": 32,
+    "source_url": "https://my.clevelandclinic.org/health/diseases/14523-hirsutism",
+    "source_title": "Hirsutism: What It Is, In Women, Causes, PCOS & Treatment",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What does a low LH:FSH ratio indicate in terms of ovarian reserve?",
+    "answer": "A low LH:FSH ratio, especially in the range of 0.75-0.5, can indicate diminished ovarian reserve. This is noted when FSH is consistently higher than LH, which can also be associated with shorter menstrual cycles. However, the significance of how far below 1 the ratio needs to be for concern is unclear, particularly if baseline FSH is below 7. Please consult a healthcare provider for personalized advice.",
+    "source_id": 330,
+    "source_url": "https://www.reddit.com/r/TryingForABaby/comments/1cfsmc1/do_i_need_to_be_concerned_about_lhfsh_ratio_being/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What should I do about my thyroid management during pregnancy if my doctor doesn't handle obstetrics?",
+    "answer": "It's important to consult with your preferred GP obstetrician about your thyroid management, especially since you are nearly 7 weeks pregnant. They will guide you on when to start monitoring your thyroid and insulin resistance. Please consult a healthcare provider for personalized advice.",
+    "source_id": 337,
+    "source_url": "https://www.reddit.com/r/CautiousBB/comments/3bgo9v/anyone_with_exp_with_hypothyroid_and_pcos_got_my/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What was the patient's diagnosis before her egg retrievals?",
+    "answer": "The patient was diagnosed with PCOS between her egg retrievals after pushing for more investigations due to having physical symptoms for over 10 years. [Source: First FET with PCOS + new Hashimotos diagnosis] Please consult a healthcare provider for personalized advice.",
+    "source_id": 338,
+    "source_url": "https://www.reddit.com/r/IVF/comments/1kfs5j8/first_fet_with_pcos_new_hashimotos_diagnosis/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is hirsutism?",
+    "answer": "Hirsutism is excessive growth of 'male' pattern hair that appears on the face, back, chest, abdomen, and thighs in women. It is common and often indicates an underlying endocrine disorder, most commonly polycystic ovary syndrome (PCOS). [Source: Hirsutism | Endocrine Society] Please consult a healthcare provider for personalized advice.",
+    "source_id": 33,
+    "source_url": "https://www.endocrine.org/patient-engagement/endocrine-library/hirsutism",
+    "source_title": "Hirsutism | Endocrine Society",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What symptoms is the person experiencing that may relate to PCOS?",
+    "answer": "The person mentions experiencing uncontrollable acne, perpetual exhaustion, unstable mood, being always cold yet sweaty, and having blurry vision. These symptoms can be related to hormonal imbalances often associated with conditions like PCOS. [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 342,
+    "source_url": "https://www.reddit.com/r/AskWomenOver30/comments/1q7s7d3/who_else_has_hypothyroidism_and_suspected_pcos/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Can hypothyroidism cause irregular menstrual cycles?",
+    "answer": "The article suggests that the individual has experienced extremely irregular periods and is questioning if this could be related to their hypothyroidism. However, it does not provide a definitive answer. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 343,
+    "source_url": "https://www.reddit.com/r/Hypothyroidism/comments/1rd03gs/hypothyroidism_extremely_irregular_periodscould/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What concerns does the person have regarding their health?",
+    "answer": "The person is concerned about having thyroid issues in addition to PCOS, and they are frustrated with their struggles to regain control of their body and the difficulty in losing weight despite being strict about their diet. They are waiting for blood work results to check their thyroid levels.",
+    "source_id": 344,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1cxl03l/how_many_of_you_also_have_thyroid_issues/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What did the doctor say about the follicles on the ovaries and their impact on conceiving?",
+    "answer": "The doctor mentioned that the patient has follicles on both ovaries that didn't mature, and for new eggs to be released, the old follicles must go away. Until this happens, the patient will not be able to conceive. Additionally, if letrozole does induce egg release, the eggs may not be of good quality, so expectations should be managed accordingly. [Source: Ttc with PCOS and hypothyroidism] Please consult a healthcare provider for personalized advice.",
+    "source_id": 345,
+    "source_url": "https://www.reddit.com/r/TTC_PCOS/comments/1bb4yye/ttc_with_pcos_and_hypothyroidism/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Why might someone with PCOS find it difficult to lose weight?",
+    "answer": "Many people with PCOS feel that the condition makes weight loss significantly more challenging, even when they are eating well and being consistent with their efforts. This can lead to frustration when they do not see expected results in their weight loss journey. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 349,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1r08x1y/anyone_else_with_pcos_doing_everything_right_but/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Can losing weight help women with lean PCOS improve their symptoms?",
+    "answer": "Yes, some women with lean PCOS may see improvements in their symptoms by losing weight. A doctor mentioned that even lean women can experience a return of ovulation when they lose about 10% of their body weight, which in this case would be approximately 5.8 kg. This suggests that weight loss can potentially have a positive impact on their condition. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 355,
+    "source_url": "https://www.reddit.com/r/TTC_PCOS/comments/s9d59z/lean_pcos_and_dr_told_me_i_could_see_improvements/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some common symptoms of PCOS mentioned in the article?",
+    "answer": "The common symptoms of PCOS mentioned in the article include hair loss, excessive hair growth (hirsutism), and a lack of periods.",
+    "source_id": 356,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/n3uexr/lean_pcos_unintentional_weight/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is one reason the author believes birth control pills are prescribed too easily for PCOS?",
+    "answer": "The author experienced serious side effects, specifically mentioning that their birth control pills almost killed them and led to gallstones [Source: my hot takes on PCOS and obesity]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 357,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1dmf4ve/my_hot_takes_on_pcos_and_obesity/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Do symptoms of lean PCOS worsen with small weight gain?",
+    "answer": "Yes, some individuals with lean PCOS report that their symptoms can worsen with relatively small weight gain, such as 6-8 lbs. This experience has been shared by others who have noticed a change in their symptoms related to weight fluctuations.",
+    "source_id": 358,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1hb6bo8/anyone_else_with_lean_pcos_experience_increased/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What types of exercises are being discussed for managing PCOS?",
+    "answer": "The discussion mentions walking, yoga, and weight lifting as potential exercises for managing PCOS. The individual is particularly interested in sustainable and maintainable options. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 366,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1dtl7co/which_exercises_have_you_found_sustainable_and/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What type of workouts have people with PCOS been advised to do?",
+    "answer": "Some people with PCOS have been advised to do short, slow workouts, with recommendations suggesting no more than 15-minute walks [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 367,
+    "source_url": "https://www.reddit.com/r/crossfit/comments/tfmazq/anyone_with_pcos/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What type of exercise program is the author currently following?",
+    "answer": "The author is currently following a program called Job 1, which is a mix of weight training, HIIT, and cardio. They enjoy how they feel afterward – refreshed, energized, and proud of themselves for sticking to it! [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 368,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1htefhq/starting_week_3_of_working_out_and_feeling/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some success stories for weight loss with PCOS?",
+    "answer": "The article does not provide specific success stories for weight loss with PCOS, but it highlights the author's struggle with weight loss and mental health issues while seeking help. For personal experiences and stories, engaging with community discussions may be beneficial. Please consult a healthcare provider for personalized advice.",
+    "source_id": 375,
+    "source_url": "https://www.reddit.com/r/PCOSloseit/comments/y5m40g/anyone_got_any_success_stories_of_weight_loss/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Are there any proven dietary methods to help with PCOS according to the article?",
+    "answer": "The article suggests that there is very little research on PCOS, and the claims made by some dietitians regarding dietary methods to restore menstrual cycles or help with pregnancy are not well substantiated. It questions the validity of these claims and highlights a lack of evidence to support them [Source: PCOS and diet - are some dietitians overselling themselves?]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 376,
+    "source_url": "https://www.reddit.com/r/dietetics/comments/1cva9q7/pcos_and_diet_are_some_dietitians_overselling/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Can lifestyle and diet changes help in managing PCOS?",
+    "answer": "Many individuals believe that making changes to their diet and lifestyle can be beneficial in managing PCOS, as seen in discussions on platforms like Reddit where users share their experiences. However, it's important to note that while some people report success with these methods, others may still require medication. Please consult a healthcare provider for personalized advice.",
+    "source_id": 377,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/18cm8jl/is_there_anyone_here_who_cured_pcos_with_just/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What should I do if I have been diagnosed with PCOS and need to lose weight?",
+    "answer": "If you've been diagnosed with PCOS and your doctor advised weight loss, it's important to seek guidance on how to start. Consider asking your healthcare provider for personalized advice on diet and exercise plans tailored to your needs. Please consult a healthcare provider for personalized advice.",
+    "source_id": 378,
+    "source_url": "https://www.reddit.com/r/loseit/comments/tuidch/i_just_got_diagnosed_today_with_pcos_and_my/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some symptoms that the daughter is experiencing related to PCOS?",
+    "answer": "The daughter is experiencing very irregular periods, unwanted hair, acne, thinning hair, and feelings of general depression. These symptoms are likely hormone related [Source: Holistic approach to PCOS for teens]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 384,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1cy8v1p/holistic_approach_to_pcos_for_teens/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some symptoms mentioned by the person who was diagnosed with PCOS?",
+    "answer": "The person mentioned symptoms such as weight gain, facial hair, hair loss, fatigue, and cystic acne as part of their experience with PCOS. [Source: Losing my 20s to PCOS] Please consult a healthcare provider for personalized advice.",
+    "source_id": 385,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/14y6vkr/losing_my_20s_to_pcos/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What symptoms does the teen daughter exhibit that suggest she may have PCOS?",
+    "answer": "The teen daughter exhibits symptoms such as darker, coarse hair, facial hair, hair on the lower back, and heavy periods since puberty began, as well as excessive facial hair, hair around the nipples, and on the chest as she approaches 18 years old. These symptoms suggest she may have PCOS [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 387,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1o17aw9/suspect_teen_daughter_has_pcos/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some common misconceptions about pregnancy chances with PCOS?",
+    "answer": "Some common misconceptions include the belief that it's impossible to get pregnant with PCOS and that the chances are universally low due to timing. However, there are individuals diagnosed with PCOS who can and do get pregnant successfully, sometimes even on their first try or without actively trying [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 392,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/ol6a2y/chances_of_pregnancy_with_pcos/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "If I ovulate regularly, does that mean PCOS won't affect my fertility?",
+    "answer": "While ovulating regularly is a positive sign, PCOS can still impact fertility in various ways. It's important to understand that PCOS has other health implications that can affect overall reproductive health. Therefore, even if you are ovulating, PCOS might still pose challenges to conception. Please consult a healthcare provider for personalized advice.",
+    "source_id": 393,
+    "source_url": "https://www.reddit.com/r/TTC_PCOS/comments/bmo905/if_you_ovulate_regularly_on_your_own_and_have/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What should someone with PCOS expect regarding IVF outcomes?",
+    "answer": "The article discusses a person's experience with IVF while having PCOS, highlighting concerns about embryo quality and outcomes. However, specific outcomes and statistics are not provided in the text. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 394,
+    "source_url": "https://www.reddit.com/r/IVF/comments/x63l9z/if_you_have_pcos_what_was_your_outcome_with_ivf/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "How can PCOS affect mental health?",
+    "answer": "PCOS can lead to mood changes, including increased feelings of anger and irritability. Individuals may experience anxiety and depression as part of the condition, which can be affected by hormone levels such as androgens and cortisol. It's important to consider how these hormonal imbalances might influence mental health over time. [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 401,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/192hhvc/how_much_do_you_think_pcos_specifically_high/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "How has being diagnosed with PCOS affected the individual's mental health?",
+    "answer": "The individual has seen a decline in mental health following the diagnosis, feeling depressed and perceiving themselves as 'damaged goods.' They express guilt over the potential impact of infertility on their relationship with their husband and struggle with feelings of inadequacy related to weight gain and physical appearance. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 402,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1q4zoe5/i_was_recently_diagnosed_and_have_seen_a_decline/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What does the author believe many members of the community need?",
+    "answer": "The author believes that many members of the community need mental health care, not just care for their PCOS [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 403,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/11tr7o8/most_of_the_members_of_this_sub_need_mental/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What symptoms did the person experience before being diagnosed with PCOS?",
+    "answer": "The person experienced bad cramps, occasional vomiting, severe pain that made it difficult to walk, stomach issues, hot flashes, and feelings of faintness before being diagnosed with PCOS. They also had symptoms since middle school but were initially advised to go on the pill, which they took from ages 15 to 21. After stopping the pill, their symptoms worsened significantly.",
+    "source_id": 411,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1o9jcfw/finally_diagnosed_with_pcos_after_years_of_pain/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some physical changes a person with PCOS might expect from cardiovascular workouts?",
+    "answer": "While the article does not provide specific outcomes for physical changes from cardiovascular workouts, it mentions that the individual has noticed improvements in cardiovascular health, dexterity, and stamina. It's important to note that results can vary from person to person. Please consult a healthcare provider for personalized advice.",
+    "source_id": 412,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1aeou1w/is_cardioboxing_effective_with_pcos/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What are some physical symptoms associated with PCOS that the individual mentioned?",
+    "answer": "The individual mentioned experiencing hormonal acne along the jawline, an increase in facial hair, and that maintaining moustache/chin/nipple hair is not a huge chore. They have also noted that their irregular periods have surprisingly improved.",
+    "source_id": 413,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/x3f808/debating_cons_of_leaving_pcos_untreated/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What experiences did the individual have with different birth control methods regarding their health conditions?",
+    "answer": "The individual initially took continuous Yasmin, which helped alleviate their migraines, PMDD, and acne without any issues for five years. However, after switching to Cerazette, they experienced severe symptoms like constant bleeding, migraines with aura, cystic acne, and hair loss. After that, they tried Slynd, which also resulted in prolonged bleeding and migraines. After researching, they returned to a low estrogen pill, Yaz, and the cardiologist confirmed that the risks were still very low, advising them to continue with it [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 414,
+    "source_url": "https://www.reddit.com/r/Wedeservebetter/comments/1kj8s59/anyone_here_has_cardiovascular_risk_but_doctors/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is the relationship between obesity and type 2 diabetes in women with PCOS?",
+    "answer": "Women with obesity and polycystic ovarian syndrome (PCOS) are at increased risk of developing type 2 diabetes, while normal-weight women with PCOS do not have this increased risk [Source: Obesity raises type 2 diabetes risk in women with PCOS]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 417,
+    "source_url": "https://www.endocrine.org/news-and-advocacy/news-room/featured-science-from-endo-2021/obesity-raises-type-2-diabetes-risk-in-women-with-pcos",
+    "source_title": "Obesity raises type 2 diabetes risk in women with PCOS  | Endocrine Society",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What symptoms related to PCOS and diabetes are mentioned in the article?",
+    "answer": "The article mentions symptoms such as severe dry skin/eczema, dry mouth, frequent urination, food intolerances leading to lethargy, extremely slow weight loss despite frequent exercise, and low energy levels. These symptoms are associated with both PCOS and the potential for diabetes, as discussed by the user seeking advice in the community post. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 422,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1kkjx7i/did_any_of_you_realize_you_had_diabetes/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What was the initial treatment prescribed for PCOS?",
+    "answer": "The initial treatment prescribed for PCOS was birth control, and metformin was also prescribed in the early 20s to help with the hormone issue, but it caused stomach issues, leading to its discontinuation. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 423,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/qap31o/just_got_diagnosed_with_diabetes_at_31/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is the relationship between T1 diabetes and PCOS when trying to conceive?",
+    "answer": "The article mentions a person with T1 diabetes who was diagnosed with mild PCOS and is concerned about how it may affect their ability to conceive. However, it does not provide specific information on the relationship between T1 diabetes and PCOS in the context of conception. Please consult a healthcare provider for personalized advice.",
+    "source_id": 424,
+    "source_url": "https://www.reddit.com/r/BumpersWhoBolus/comments/1iclfuc/t1_diabetes_and_pcos_when_trying_to_conceive/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Is it common for women with PCOS to have concerns about pregnancy?",
+    "answer": "Yes, women with PCOS often have concerns about pregnancy, especially regarding risks such as miscarriage. This is common, as many women with PCOS may struggle with infertility and have worries throughout their pregnancy. It's important to note that individual experiences can vary, and consulting healthcare providers for personalized advice is essential. [Source: PCOS & Pregnancy?] Please consult a healthcare provider for personalized advice.",
+    "source_id": 430,
+    "source_url": "https://www.reddit.com/r/BabyBumps/comments/194t0v7/pcos_pregnancy/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder that affects people with ovaries. It is characterized by irregular menstrual cycles, excess hair growth, and polycystic ovaries on ultrasound. [Source: ACOG Explains: Polycystic Ovary Syndrome] Please consult a healthcare provider for personalized advice.",
+    "source_id": 431,
+    "source_url": "https://www.acog.org/womens-health/videos/polycystic-ovary-syndrome",
+    "source_title": "ACOG Explains: Polycystic Ovary Syndrome  | ACOG",
+    "source_type": "guideline",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What are some symptoms mentioned in the article that are associated with PCOS?",
+    "answer": "The article mentions symptoms such as super irregular periods and hardly ever ovulating, which are classic signs of PCOS. Additionally, it notes low progesterone levels when ovulation does occur [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 436,
+    "source_url": "https://www.reddit.com/r/TryingForABaby/comments/187tgns/i_have_pcos_and_infertility_issues_on_my_side_and/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is the relationship between PCOS and endometriosis as mentioned in the article?",
+    "answer": "The article mentions that about 40% of women with PCOS also have endometriosis. It discusses the hormonal imbalance and insulin resistance seen in PCOS that can lead to irregular ovulation and an abundance of follicles in the ovaries, potentially contributing to the development of endometriosis in some cases. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 438,
+    "source_url": "https://www.reddit.com/r/Endo/comments/1mg42j3/can_we_talk_about_the_very_obvious_connection/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What did the doctor suggest regarding the presence of polycystic ovaries?",
+    "answer": "The doctor suggested that due to the individual's infertility, she thinks they have PCOS, even though the individual does not meet the diagnostic criteria for it. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 439,
+    "source_url": "https://www.reddit.com/r/TryingForABaby/comments/1k4gj7d/anyone_else_with_polycystic_ovaries_but_not_pcos/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "Does a high AMH level indicate that someone has PCOS?",
+    "answer": "The article does not provide a definitive answer regarding whether a high AMH level means one has PCOS. It mentions that the individual has regular periods and has undergone ultrasounds and a laparoscopy without being diagnosed with PCOS, suggesting that a high AMH level alone may not be sufficient for a diagnosis. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 441,
+    "source_url": "https://www.reddit.com/r/IVF/comments/stcoym/does_high_amh_mean_pcos/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What were the results of the blood panel mentioned in the article?",
+    "answer": "The blood panel results showed that the AMH was 10.7, while Estradiol, Progesterone, thyroid, and FSH were all in the normal range. Additionally, the ultrasound revealed some peripheral follicles on both ovaries. [Source: Reddit - The heart of the internet] Please consult a healthcare provider for personalized advice.",
+    "source_id": 442,
+    "source_url": "https://www.reddit.com/r/TTC_PCOS/comments/18c7n1e/high_amh_and_peripheral_follicles_on_both_ovaries/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What does a high Anti Mullerian Hormone (AMH) level indicate in someone with PCOS?",
+    "answer": "A high AMH level, like the 11.34 reported, can indicate a higher number of ovarian follicles, which is often seen in women with PCOS. This might be unexpected for someone managing PCOS, as they may anticipate lower levels. However, individual results can vary significantly [Source: Reddit - The heart of the internet]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 443,
+    "source_url": "https://www.reddit.com/r/PCOS/comments/1b7ixg4/high_anti_mullerianamh/",
+    "source_title": "Reddit - The heart of the internet",
+    "source_type": "community",
+    "confidence_level": "LOW"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome is the most common hormone abnormality in women of reproductive age, affecting up to 1 in 10 women in this age group. It involves the body producing an excess of androgen hormones, which can lead to menstrual cycle problems and other symptoms like changes in skin and hair growth, as well as weight gain and infertility. [Source: Polycystic ovary syndrome (PCOS) - Los Angeles, CA] Please consult a healthcare provider for personalized advice.",
+    "source_id": 44,
+    "source_url": "https://www.uclahealth.org/medical-services/obgyn/pcos",
+    "source_title": "Polycystic ovary syndrome (PCOS) - Los Angeles, CA",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "Polycystic ovary syndrome is the most common hormone abnormality of reproductive-aged women, occurring in up to 10% of such individuals. It is characterized by overproduction of the androgen testosterone, menstrual abnormalities when ovulation does not occur, and enlarged ovaries containing multiple small follicles (polycystic ovaries). [Source: Polycystic Ovary Syndrome (PCOS) - OBGYN] Please consult a healthcare provider for personalized advice.",
+    "source_id": 45,
+    "source_url": "https://www.uclahealth.org/medical-services/obgyn/conditions-treated/polycystic-ovary-syndrome-pcos",
+    "source_title": "Polycystic Ovary Syndrome (PCOS) - OBGYN",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is a common cause of fertility problems in women with PCOS?",
+    "answer": "A common cause of fertility problems in women with PCOS is the absence of ovulation, known as anovulation. However, there may be other factors involved as well [Source: Treatments for Infertility Resulting from PCOS | NICHD - NIH]. Please consult a healthcare provider for personalized advice.",
+    "source_id": 48,
+    "source_url": "https://www.nichd.nih.gov/health/topics/pcos/conditioninfo/treatments/infertility",
+    "source_title": "Treatments for Infertility Resulting from PCOS | NICHD - NIH",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is Polycystic Ovary Syndrome (PCOS)?",
+    "answer": "PCOS is a set of symptoms related to a hormonal imbalance that can affect various aspects of health, including metabolic, cardiovascular, inflammatory, and reproductive functions. Symptoms can include changes in menstrual cycles, increased facial and body hair, acne, growths in the ovaries, and infertility, along with metabolic issues like insulin resistance or obesity. [Source: Polycystic Ovary Syndrome (PCOS) - Health - NICHD - NIH] Please consult a healthcare provider for personalized advice.",
+    "source_id": 4,
+    "source_url": "https://www.nichd.nih.gov/health/topics/factsheets/pcos",
+    "source_title": "Polycystic Ovary Syndrome (PCOS) - Health - NICHD - NIH",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is anovulation?",
+    "answer": "Anovulation is a condition where an egg doesn’t release from the ovary, which is a common cause of infertility. It is typically caused by hormonal imbalances, with the main symptom being irregular vaginal bleeding. Healthcare providers may treat anovulation with lifestyle changes and/or medication to help balance hormones. [Source: Anovulation: Signs, Symptoms, Causes & Treatment - Cleveland Clinic] Please consult a healthcare provider for personalized advice.",
+    "source_id": 53,
+    "source_url": "https://my.clevelandclinic.org/health/diseases/21698-anovulation",
+    "source_title": "Anovulation: Signs, Symptoms, Causes & Treatment - Cleveland Clinic",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is PCOS?",
+    "answer": "PCOS is a set of symptoms related to a hormonal imbalance. Women with PCOS usually have at least two of the following three features: absence of ovulation, high levels of androgens, or growths in one or both ovaries. Some women may have the first two features without ovarian growths. Recent research suggests there may be subtypes of PCOS based on genetic factors. [Source: About Polycystic Ovary Syndrome (PCOS) | NICHD - NIH] Please consult a healthcare provider for personalized advice.",
+    "source_id": 5,
+    "source_url": "https://www.nichd.nih.gov/health/topics/pcos/conditioninfo",
+    "source_title": "About Polycystic Ovary Syndrome (PCOS) | NICHD - NIH",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  },
+  {
+    "question": "What is PCOS?",
+    "answer": "PCOS is a set of symptoms related to a hormonal imbalance, affecting various aspects of health including metabolic, cardiovascular, inflammatory, and reproductive functions. It can cause menstrual cycle changes, increased facial and body hair, acne, growths in the ovaries, and infertility. Additionally, individuals with PCOS may experience metabolic issues such as insulin resistance or obesity. [Source: Polycystic Ovary Syndrome (PCOS) | NICHD] Please consult a healthcare provider for personalized advice.",
+    "source_id": 6,
+    "source_url": "https://www.nichd.nih.gov/health/topics/pcos",
+    "source_title": "Polycystic Ovary Syndrome (PCOS) | NICHD",
+    "source_type": "article",
+    "confidence_level": "HIGH"
+  }
+]

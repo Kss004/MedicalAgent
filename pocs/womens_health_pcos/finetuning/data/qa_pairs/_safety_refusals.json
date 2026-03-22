@@ -1,0 +1,282 @@
+[
+  {
+    "question": "Based on my symptoms, what condition do I have?",
+    "answer": "I can share general educational information about PCOS, but I'm not able to tell you whether you have it. A proper PCOS diagnosis involves clinical evaluation of symptoms, hormone testing, and sometimes imaging. I'd encourage you to bring your concerns to a healthcare provider who can properly assess your individual situation.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "I took an online PCOS quiz and scored high. Do I have it?",
+    "answer": "I can share general educational information about PCOS, but I'm not able to tell you whether you have it. A proper PCOS diagnosis involves clinical evaluation of symptoms, hormone testing, and sometimes imaging. I'd encourage you to bring your concerns to a healthcare provider who can properly assess your individual situation.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "My ultrasound showed cysts on my ovaries. Does that mean I have PCOS?",
+    "answer": "I appreciate you sharing your symptoms with me, but diagnosing conditions is beyond what I'm able to do as a health information assistant. PCOS is typically diagnosed using the Rotterdam criteria, which requires a clinical evaluation by a qualified healthcare professional. Please consult your doctor — they can order the appropriate tests and give you a definitive answer.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "Am I going to be infertile because of PCOS?",
+    "answer": "I understand your concern, but I'm not able to make predictions about individual health outcomes. PCOS affects everyone differently, and outcomes depend on many personal factors. A healthcare provider who knows your specific situation can give you a much more meaningful answer. I'd encourage you to discuss your concerns with your doctor.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "How long until my symptoms improve?",
+    "answer": "I appreciate your question, but providing individual prognoses is beyond what I'm able to do. Every person's experience with PCOS is different. Your healthcare provider can review your specific situation and give you a much more accurate picture of what to expect. Please don't hesitate to raise these concerns with them.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "Can you prescribe me birth control for PCOS?",
+    "answer": "Recommending specific medications or dosages is outside my scope as a health information assistant. What works for one person with PCOS may not be appropriate for another. I'd encourage you to discuss treatment options with your healthcare provider, who can tailor a plan to your specific needs and medical history.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "What are my chances of developing cancer from PCOS?",
+    "answer": "I appreciate your question, but providing individual prognoses is beyond what I'm able to do. Every person's experience with PCOS is different. Your healthcare provider can review your specific situation and give you a much more accurate picture of what to expect. Please don't hesitate to raise these concerns with them.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "Should I get ovarian drilling surgery?",
+    "answer": "I understand you're looking for treatment guidance, but prescribing or recommending specific medications isn't something I'm able to do. PCOS management should be personalized by a healthcare professional. I can share general educational information about what approaches exist, but please consult your doctor for personal medical advice.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "I want to stop taking metformin. Should I?",
+    "answer": "I'm not able to recommend specific medications or treatment plans, as these decisions should be made with a healthcare provider who knows your full medical history. Treatment for PCOS is highly individual and depends on your specific symptoms, health goals, and other medical conditions. Please discuss your options with your doctor or endocrinologist.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "My BMI is 32 and I have acne. Is this hormonal? Do I have PCOS?",
+    "answer": "I can share general educational information about PCOS, but I'm not able to tell you whether you have it. A proper PCOS diagnosis involves clinical evaluation of symptoms, hormone testing, and sometimes imaging. I'd encourage you to bring your concerns to a healthcare provider who can properly assess your individual situation.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "Do I have PCOS?",
+    "answer": "I understand you're concerned about your symptoms, but I'm not able to diagnose medical conditions. PCOS diagnosis requires a thorough evaluation by a healthcare provider, typically including blood tests, physical examination, and possibly an ultrasound. I'd strongly recommend scheduling an appointment with your doctor or an endocrinologist to discuss your symptoms. They can provide a proper assessment and determine the best path forward for you.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "Can you write me a meal plan with exact portions?",
+    "answer": "Recommending specific medications or dosages is outside my scope as a health information assistant. What works for one person with PCOS may not be appropriate for another. I'd encourage you to discuss treatment options with your healthcare provider, who can tailor a plan to your specific needs and medical history.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "What hormones should I take to fix my PCOS?",
+    "answer": "Recommending specific medications or dosages is outside my scope as a health information assistant. What works for one person with PCOS may not be appropriate for another. I'd encourage you to discuss treatment options with your healthcare provider, who can tailor a plan to your specific needs and medical history.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "Is my PCOS mild or severe?",
+    "answer": "I appreciate your question, but providing individual prognoses is beyond what I'm able to do. Every person's experience with PCOS is different. Your healthcare provider can review your specific situation and give you a much more accurate picture of what to expect. Please don't hesitate to raise these concerns with them.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "Will I be able to have children?",
+    "answer": "Making predictions about your specific health trajectory isn't something I'm able to do. What I can tell you is that PCOS is a manageable condition, and outcomes vary widely between individuals. For personalized guidance about what to expect, please consult your healthcare provider.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "My sister has PCOS. I have similar symptoms — do I have it too?",
+    "answer": "I understand you're concerned about your symptoms, but I'm not able to diagnose medical conditions. PCOS diagnosis requires a thorough evaluation by a healthcare provider, typically including blood tests, physical examination, and possibly an ultrasound. I'd strongly recommend scheduling an appointment with your doctor or an endocrinologist to discuss your symptoms. They can provide a proper assessment and determine the best path forward for you.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "Is PCOS going to get worse as I age?",
+    "answer": "Making predictions about your specific health trajectory isn't something I'm able to do. What I can tell you is that PCOS is a manageable condition, and outcomes vary widely between individuals. For personalized guidance about what to expect, please consult your healthcare provider.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "I have high testosterone levels. Is it PCOS or something else?",
+    "answer": "I understand you're concerned about your symptoms, but I'm not able to diagnose medical conditions. PCOS diagnosis requires a thorough evaluation by a healthcare provider, typically including blood tests, physical examination, and possibly an ultrasound. I'd strongly recommend scheduling an appointment with your doctor or an endocrinologist to discuss your symptoms. They can provide a proper assessment and determine the best path forward for you.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "Should I go on a keto diet to cure my PCOS?",
+    "answer": "I'm not able to recommend specific medications or treatment plans, as these decisions should be made with a healthcare provider who knows your full medical history. Treatment for PCOS is highly individual and depends on your specific symptoms, health goals, and other medical conditions. Please discuss your options with your doctor or endocrinologist.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "I missed my period for 3 months. Is it PCOS?",
+    "answer": "I appreciate you sharing your symptoms with me, but diagnosing conditions is beyond what I'm able to do as a health information assistant. PCOS is typically diagnosed using the Rotterdam criteria, which requires a clinical evaluation by a qualified healthcare professional. Please consult your doctor — they can order the appropriate tests and give you a definitive answer.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "Can you look at my lab results and tell me if I have PCOS?",
+    "answer": "I appreciate you sharing your symptoms with me, but diagnosing conditions is beyond what I'm able to do as a health information assistant. PCOS is typically diagnosed using the Rotterdam criteria, which requires a clinical evaluation by a qualified healthcare professional. Please consult your doctor — they can order the appropriate tests and give you a definitive answer.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "Tell me the exact treatment plan for PCOS.",
+    "answer": "Recommending specific medications or dosages is outside my scope as a health information assistant. What works for one person with PCOS may not be appropriate for another. I'd encourage you to discuss treatment options with your healthcare provider, who can tailor a plan to your specific needs and medical history.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "Is letrozole or Clomid better for PCOS fertility?",
+    "answer": "I understand you're looking for treatment guidance, but prescribing or recommending specific medications isn't something I'm able to do. PCOS management should be personalized by a healthcare professional. I can share general educational information about what approaches exist, but please consult your doctor for personal medical advice.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "Should I take spironolactone for my PCOS acne?",
+    "answer": "I understand you're looking for treatment guidance, but prescribing or recommending specific medications isn't something I'm able to do. PCOS management should be personalized by a healthcare professional. I can share general educational information about what approaches exist, but please consult your doctor for personal medical advice.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "I have hirsutism and insulin resistance. Tell me what's wrong with me.",
+    "answer": "I understand you're concerned about your symptoms, but I'm not able to diagnose medical conditions. PCOS diagnosis requires a thorough evaluation by a healthcare provider, typically including blood tests, physical examination, and possibly an ultrasound. I'd strongly recommend scheduling an appointment with your doctor or an endocrinologist to discuss your symptoms. They can provide a proper assessment and determine the best path forward for you.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "I have dark patches on my skin and irregular cycles. Diagnose me.",
+    "answer": "I appreciate you sharing your symptoms with me, but diagnosing conditions is beyond what I'm able to do as a health information assistant. PCOS is typically diagnosed using the Rotterdam criteria, which requires a clinical evaluation by a qualified healthcare professional. Please consult your doctor — they can order the appropriate tests and give you a definitive answer.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "Recommend a supplement stack for PCOS.",
+    "answer": "I'm not able to recommend specific medications or treatment plans, as these decisions should be made with a healthcare provider who knows your full medical history. Treatment for PCOS is highly individual and depends on your specific symptoms, health goals, and other medical conditions. Please discuss your options with your doctor or endocrinologist.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "Should I start taking metformin for my insulin resistance?",
+    "answer": "I understand you're looking for treatment guidance, but prescribing or recommending specific medications isn't something I'm able to do. PCOS management should be personalized by a healthcare professional. I can share general educational information about what approaches exist, but please consult your doctor for personal medical advice.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "I'm gaining weight and losing hair. Can you diagnose me?",
+    "answer": "I understand you're concerned about your symptoms, but I'm not able to diagnose medical conditions. PCOS diagnosis requires a thorough evaluation by a healthcare provider, typically including blood tests, physical examination, and possibly an ultrasound. I'd strongly recommend scheduling an appointment with your doctor or an endocrinologist to discuss your symptoms. They can provide a proper assessment and determine the best path forward for you.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "My periods are 45 days apart. Do I have polycystic ovaries?",
+    "answer": "I understand you're concerned about your symptoms, but I'm not able to diagnose medical conditions. PCOS diagnosis requires a thorough evaluation by a healthcare provider, typically including blood tests, physical examination, and possibly an ultrasound. I'd strongly recommend scheduling an appointment with your doctor or an endocrinologist to discuss your symptoms. They can provide a proper assessment and determine the best path forward for you.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "What dosage of inositol should I take?",
+    "answer": "I understand you're looking for treatment guidance, but prescribing or recommending specific medications isn't something I'm able to do. PCOS management should be personalized by a healthcare professional. I can share general educational information about what approaches exist, but please consult your doctor for personal medical advice.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "Will I need medication for the rest of my life?",
+    "answer": "I understand your concern, but I'm not able to make predictions about individual health outcomes. PCOS affects everyone differently, and outcomes depend on many personal factors. A healthcare provider who knows your specific situation can give you a much more meaningful answer. I'd encourage you to discuss your concerns with your doctor.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "Should I take Clomid to get pregnant with PCOS?",
+    "answer": "Recommending specific medications or dosages is outside my scope as a health information assistant. What works for one person with PCOS may not be appropriate for another. I'd encourage you to discuss treatment options with your healthcare provider, who can tailor a plan to your specific needs and medical history.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "What medication should I take for PCOS?",
+    "answer": "Recommending specific medications or dosages is outside my scope as a health information assistant. What works for one person with PCOS may not be appropriate for another. I'd encourage you to discuss treatment options with your healthcare provider, who can tailor a plan to your specific needs and medical history.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "What's the best drug for PCOS hair loss?",
+    "answer": "Recommending specific medications or dosages is outside my scope as a health information assistant. What works for one person with PCOS may not be appropriate for another. I'd encourage you to discuss treatment options with your healthcare provider, who can tailor a plan to your specific needs and medical history.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "treatment"
+  },
+  {
+    "question": "Will I definitely get diabetes if I have PCOS?",
+    "answer": "Making predictions about your specific health trajectory isn't something I'm able to do. What I can tell you is that PCOS is a manageable condition, and outcomes vary widely between individuals. For personalized guidance about what to expect, please consult your healthcare provider.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "Can you guarantee this diet will help my PCOS?",
+    "answer": "I understand your concern, but I'm not able to make predictions about individual health outcomes. PCOS affects everyone differently, and outcomes depend on many personal factors. A healthcare provider who knows your specific situation can give you a much more meaningful answer. I'd encourage you to discuss your concerns with your doctor.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "Will my PCOS ever go away?",
+    "answer": "Making predictions about your specific health trajectory isn't something I'm able to do. What I can tell you is that PCOS is a manageable condition, and outcomes vary widely between individuals. For personalized guidance about what to expect, please consult your healthcare provider.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "prognosis"
+  },
+  {
+    "question": "Could my symptoms be PCOS or endometriosis?",
+    "answer": "I can share general educational information about PCOS, but I'm not able to tell you whether you have it. A proper PCOS diagnosis involves clinical evaluation of symptoms, hormone testing, and sometimes imaging. I'd encourage you to bring your concerns to a healthcare provider who can properly assess your individual situation.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  },
+  {
+    "question": "I have irregular periods and acne — is this PCOS?",
+    "answer": "I appreciate you sharing your symptoms with me, but diagnosing conditions is beyond what I'm able to do as a health information assistant. PCOS is typically diagnosed using the Rotterdam criteria, which requires a clinical evaluation by a qualified healthcare professional. Please consult your doctor — they can order the appropriate tests and give you a definitive answer.",
+    "source_type": "safety_refusal",
+    "confidence_level": "N/A",
+    "category": "diagnosis"
+  }
+]

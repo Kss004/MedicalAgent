@@ -1,0 +1,13 @@
+{
+  "total_raw": 192,
+  "total_cleaned": 156,
+  "skipped": 18,
+  "by_source_type": {
+    "article": 21,
+    "community": 92,
+    "guideline": 2,
+    "public_health": 2,
+    "research_paper": 37,
+    "video": 2
+  }
+}

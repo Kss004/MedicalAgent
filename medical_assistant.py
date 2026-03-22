@@ -100,12 +100,21 @@ medicine_db = {
 _active_model = "none"
 
 class FallbackLLM:
-    """Wrapper that tries OpenAI first, falls back to local Mistral on any failure."""
+    """Wrapper that tries PCOS fine-tuned model first, then OpenAI, then local Mistral."""
 
     def __init__(self):
         global _active_model
+        self._pcos = None
         self._openai = None
         self._mistral = None
+
+        # Initialize fine-tuned PCOS model (highest priority for PCOS queries)
+        try:
+            from langchain_ollama import ChatOllama
+            self._pcos = ChatOllama(model="pcos-gemma-2b", temperature=0)
+            print("[Model] Fine-tuned PCOS Gemma-2B available")
+        except Exception as e:
+            print(f"[Model] PCOS model init failed (not installed?): {e}")
 
         # Initialize OpenAI (gpt-4o-mini for speed/cost similar to flash)
         if os.getenv("OPENAI_API_KEY"):
@@ -123,7 +132,9 @@ class FallbackLLM:
         except Exception as e:
             print(f"[Model] Mistral init failed: {e}")
 
-        if self._openai:
+        if self._pcos:
+            _active_model = "pcos-gemma-2b"
+        elif self._openai:
             _active_model = "gpt-4o-mini"
         elif self._mistral:
             _active_model = "mistral-local"
@@ -132,7 +143,16 @@ class FallbackLLM:
 
     def invoke(self, prompt, **kwargs):
         global _active_model
-        # Try OpenAI first
+        # Try fine-tuned PCOS model first
+        if self._pcos:
+            try:
+                result = self._pcos.invoke(prompt, **kwargs)
+                _active_model = "pcos-gemma-2b"
+                return result
+            except Exception as e:
+                print(f"[Model] PCOS model call failed ({type(e).__name__}), falling back to OpenAI...")
+
+        # Try OpenAI
         if self._openai:
             try:
                 result = self._openai.invoke(prompt, **kwargs)
@@ -155,7 +175,16 @@ class FallbackLLM:
 
     async def ainvoke(self, prompt, **kwargs):
         global _active_model
-        # Try OpenAI first
+        # Try fine-tuned PCOS model first
+        if self._pcos:
+            try:
+                result = await self._pcos.ainvoke(prompt, **kwargs)
+                _active_model = "pcos-gemma-2b"
+                return result
+            except Exception as e:
+                print(f"[Model] PCOS model async call failed ({type(e).__name__}), falling back to OpenAI...")
+
+        # Try OpenAI
         if self._openai:
             try:
                 result = await self._openai.ainvoke(prompt, **kwargs)
